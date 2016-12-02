@@ -4,7 +4,7 @@
 \par{
 Dans les travaux pratiques précédents on a analysé la croissance du phytoplancton en fonction des
 nutriments disponibles. Dans les modèles actuels nous sommes moins intéressés par l'approvisionnement
-alimentaire du phytoplancton. On a plutôt procéde par enquêter l'interaction du phytoplancton avec
+alimentaire du phytoplancton. Nous avons plutôt procédé par enquêter l'interaction du phytoplancton avec
 un prédateur naturel de cette espèce, le zooplancton. En conséquence le modèle mathèmatique a été simplifié
 de manière à ce qu'on considère maintenant une offre des nutriments infiniment grand pour le
 phytoplancton\footnote{En d'autres termes, la croissance du phytoplancton n'est plus limitée par les
@@ -13,7 +13,12 @@ nutriments}.
 Pour mieux interpréter les simulations du modèle mathématique nous avons émis l'hypothèse que la mortalité
 du phytoplancton est uniquement due au broutage du zooplancton. La mortalité du phytoplancton par d'autres
 prédateurs, toxines environnementales, lyse cellulaire etc. n'est pas représentée par le modèle.
-Nous obtenons alors les équations suivantes:
+Nous supposons donc que l'influence de ces causes de mortalité peut être négligée par rapport à l'influence
+de la mortalité de phytoplancton due au broutage du zooplancton.
+}
+\par{
+En résumé, nous obtenons le modèle conceptuel effectué dans la figure~\ref{fig:partie1DiagConcept}
+et les équations suivantes:
 }
 
 \begin{equation}
@@ -31,7 +36,7 @@ Nous obtenons alors les équations suivantes:
 
 \par{
 Dans la première partie des travaux pratiques, l'intérêt principal est de comparer l'impacte de la
-fonctions de broutage. Pour les analyses, les fonctions de broutage suivantes ont étée considérée:
+fonctions de broutage. Pour les analyses, les fonctions de broutage suivantes ont été considérées:
 }
 
 \begin{equation}
@@ -47,12 +52,23 @@ fonctions de broutage. Pour les analyses, les fonctions de broutage suivantes on
   \label{eq:partie1GrazHol}
 \end{equation}
 
-\begin{figure}
+\begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie1/diagrammeConceptuel.png}
-  \caption{Le modèle conceptuel du système étudié dans le quatrième cours.}
+  \caption{Le modèle conceptuel du système étudié dans le quatrième cours. La croissance du phytoplancton
+n'est plus limitée par les nutriments disponibles. Cependant, la croissance est toujours limitée par la
+disponibilité de la lumière et de la température. Dans les formules, l'influence de ces deux impacts
+environnementals est cachée dans le terme $\mu_{DA}$. Une partie du phytoplancton existant est consommer
+par le mésozooplancton (=MSZ). Cette partie est représentée par les fonctions de broutage
+différentes fois la concentration du mésozooplancton ($graz_{MSZ}[MSZ]$). Dans le système modèlise
+le mésozooplancton n'a pas des prédateurs naturels. La mort cellulaire naturelle du zooplancton ne peut plus
+être négligée (dans les formules c'est le terme $mm_{MSZ}$ qui décrit cette l'influence).
+}
   \label{fig:partie1DiagConcept}
 \end{figure}
 
+\par{
+
+}
 
 \subsection{Analyse mathèmatique}
 \subsubsection{États stationnaires}
