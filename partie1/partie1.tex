@@ -60,18 +60,67 @@ disponibilité de la lumière et de la température. Dans les formules, l'influe
 environnementals est cachée dans le terme $\mu_{DA}$. Une partie du phytoplancton existant est consommer
 par le mésozooplancton (=MSZ). Cette partie est représentée par les fonctions de broutage
 différentes fois la concentration du mésozooplancton ($graz_{MSZ}[MSZ]$). Dans le système modèlise
-le mésozooplancton n'a pas des prédateurs naturels. La mort cellulaire naturelle du zooplancton ne peut plus
-être négligée (dans les formules c'est le terme $mm_{MSZ}$ qui décrit cette l'influence).
+le mésozooplancton n'a pas des prédateurs naturels. Donc, la mort cellulaire naturelle du zooplancton ne peut
+plus être négligée (dans les formules c'est le terme $mm_{MSZ}$ qui décrit cette l'influence).
 }
   \label{fig:partie1DiagConcept}
 \end{figure}
 
 \par{
-
+Pour peut mieux comprendre les équations du modèle, la grille~\ref{tab:partie1signifParam} peut également
+être intéressante. Elle donne un aperçu de la signification etc. de chaque terme dans les équations.
+}
+\par{
+Nous voulons encore pointer que les $T_{opt}$ et $d_{opt}$ ont les mêmes valeurs pour les diatomées et le
+mésozooplancton simulé. On a donc considerer que les deux espèces sont limitées par la tempèrature
+de la même façon.
 }
 
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ | c | c | c | c | c | }
+\hline
+Terme & Signification & Type & Valeur & Unité \\
+\hline
+$[DA]$ & \pbox{4cm}{Concentration du carbon des diatomées} & Variable d'état & $5$ & ${{mmol C}\over{m^{-3}}}$ \\
+$[MSZ]$ & \pbox{4cm}{Concentration du carbon du mésozooplancton}  & Variable d'état & $1$ & ${{mmol C}\over{m^{-3}}}$ \\
+$\mu_{DA}$ & \pbox{4cm}{Taux de croissance des diatomées} & \pbox{3cm}{Fonction $\mu_{max}max(T)llum$} & \pbox{4cm}{Dépend de la disponibilité de la lumière (en fonction du $[DA]$) et de la tempèrature} & $Jour^{-1}$ \\
+$graz_{MSZ}$ & \pbox{4cm}{Fonction de grazing} & Fonction & \pbox{4cm}{Dépend de la tempèrature et de $[DA]$} & $Jour^{-1}$ \\
+$eges_{MSZ}$ & \pbox{4cm}{Taux d'egestion du mésozooplancton} & Paramètre & $0.1$ & $-$ \\
+$Y_{MSZ}$ & \pbox{4cm}{Efficience de croissance du mésozooplancton} & Paramètre & $0.25$ & $-$ \\
+$mm_{MSZ}$ & \pbox{4cm}{Taux de mortalité du mésozooplancton} & Paramètre & $0.05$ & $Jour^{-1}$ \\
+$g_{MSZ}$ & \pbox{4cm}{Taux de grazing maximal} & Paramètre & $1.2$ & $Jour^{-1}$ \\
+$max(T)$ & \pbox{4cm}{Fonction de la limitation de la tempèrature} & \pbox{3cm}{Fonction\\(bell-shaped)} & \pbox{4cm}{Dépend de $T, T_{opt}$ et $d_{opt}$} & $-$ \\
+$kg_{MSZ}$ & \pbox{4cm}{Constante de grazing} & Paramètre & $10$ & ${{mmol C}\over{m^{-3}}}$ \\
+$[DA_0]$ & \pbox{4cm}{Concentration minimale avant le mésozooplancton commencent de consummer les diatomées} & Paramètre & $5$ & ${{mmol C}\over{m^{-3}}}$ \\
+$\mu_{max}$ & \pbox{4cm}{Taux de croissance maximal des diatomées} & Paramètre & $1.2$ & $Jour^{-1}$ \\
+$T_{opt}$ & \pbox{4cm}{Température optimale (pour les diatomées et du mésozooplancton)} & Paramètre & $16.3$ & $^{\circ}C$ \\
+$d_{opt}$ & \pbox{4cm}{Delta T (pour les diatomées et du mésozooplancton)} & Paramètre & $13.7$ & $^{\circ}C$ \\
+$T$ & \pbox{4cm}{Température simulée} & Paramètre & $10.0$ & $^{\circ}C$ \\
+$llum$ & \pbox{4cm}{Limitation par la lumière} & \pbox{3cm}{Fonction\\$1-e^{-\alpha PAR_Z / \mu_{max}}$} & \pbox{4cm}{Dépend de la lumière disponible, ...} & $-$ \\
+\end{tabular}
+\end{center}
+\end{table}
+\clearpage
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ | c | c | c | c | c | }
+$\alpha$ & \pbox{4cm}{L'efficacité des chloroplastes des diatomées} & Paramètre & $0.02$ & ${mol^{-1}*m^2*sec}\over{quanta * jour}$ \\
+$PAR_Z$ & \pbox{4cm}{Lumière disponible par mol chlorophylle} & \pbox{3cm}{Fonction\\$PAR_0*e^{-k_e*z}$} & \pbox{4cm}{Dépend de la latitude, les solides en suspension, ...} & ${mol*quanta}\over{m^2*sec}$ \\
+$PAR_0$ & \pbox{4cm}{Lumière solaire incidente} & Paramètre & $23.0$ & ${quanta}\over{m^2*sec}$ \\
+$k_e$ & \pbox{4cm}{Coefficient d'extinction verticale de la lumière} & \pbox{3cm}{Fonction\\$0.35+0.02{{1}\over{2}}[DA]$} & \pbox{4cm}{Dépend des solides en suspension, ...} & $^{mol}/_m$ \\
+$z$ & \pbox{4cm}{Profondeur de l'habitat} & Paramètre & $1.0$ & $m$ \\
+\hline
+\end{tabular}
+\end{center}
+  \caption{Signification, type, valeur et unité de chaque terme/paramètre dans les
+équations~\ref{eq:partie1DiffEq1},~\ref{eq:partie1DiffEq2},~\ref{eq:partie1GrazMic},~\ref{eq:partie1GrazMicSeul} et~\ref{eq:partie1GrazHol}.}
+  \label{tab:partie1signifParam}
+\end{table}
+\FloatBarrier
+
 \subsection{Analyse mathèmatique}
-\subsubsection{États stationnaires}
+
 \par{
 La grille~\ref{tab:partie1etatsStat} donne un aperçu des états stationnaires du système
 pour les fonctions de broutage differents. Les constantes supplémentaires utilisées
@@ -104,12 +153,13 @@ HOL & $k*\sqrt{{{m}\over{c-m}}}$ & ${{\mu_{DA}k \left ( 1 + {m}\over{c-m} \right
 \hline
 \end{tabular}
 \end{center}
-  \caption{Les états stationnaires du système pour les fonctions de broutage differents.}
+  \caption{Les états stationnaires du système pour les fonctions de broutage differents. Les
+constantes supplémentaires utilisées ont était définies dans le texte précédent. Les formules sont en accord
+avec les simulations informatiques décrites ci-dessous.
+}
   \label{tab:partie1etatsStat}
 \end{table}
-
-
-\subsubsection{Stabilité des états stationnaires}
+\FloatBarrier
 
 \subsection{Simulation de référence}
 
