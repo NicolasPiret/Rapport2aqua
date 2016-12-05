@@ -126,7 +126,7 @@ $z$ & \pbox{4cm}{Profondeur de l'habitat} & Paramètre & $1.0$ & $m$ \\
 
 \par{
 La grille~\ref{tab:partie1etatsStat} donne un aperçu des états stationnaires du système
-pour les fonctions de broutage differents. Les constantes supplémentaires utilisées
+pour les fonctions de broutage diffèrents. Les constantes supplémentaires utilisées
 dans la grille sont définies comme suit:
 }
 \[
@@ -156,7 +156,7 @@ HOL & $k*\sqrt{{{m}\over{c-m}}}$ & ${{\mu_{DA}k \left ( 1 + {m}\over{c-m} \right
 \hline
 \end{tabular}
 \end{center}
-  \caption{Les états stationnaires du système pour les fonctions de broutage differents. Les
+  \caption{Les états stationnaires du système pour les fonctions de broutage diffèrents. Les
 constantes supplémentaires utilisées ont était définies dans le texte précédent. Les formules sont en accord
 avec les simulations informatiques décrites ci-dessous (cmp grille~\ref{tab:partie1appPropFctGrazing} et
 figure~\ref{fig:partie1RefSimulations}).
@@ -171,11 +171,11 @@ Pas tous les états stationnaires listent dans la table~\ref{tab:partie1etatsSta
 Malheureusement il nous a manque un peu du temps pour etudier la stabilité en détail.
 }
 
-\subsection{Comparision des fonction de grazing differents}
+\subsection{Comparision des fonction de grazing diffèrents}
 
 \par{
 Dans une première étappe l'aissez nous discouter l'impact de la fonction de grazing. La courbe de les
-trois fonction differents a était tracée dans la figure~\ref{fig:partie1grazingFcts}.
+trois fonction diffèrents a était tracée dans la figure~\ref{fig:partie1grazingFcts}.
 On peut observer les propriétés suivantes:
 }
 \begin{itemize}
@@ -194,6 +194,7 @@ les courbes de l'équation~\ref{eq:partie1GrazMic} et de l'équation~\ref{eq:par
 se croisent seulement à l'infini.
   \item Les courbes de les équations~\ref{eq:partie1GrazMicSeul} et~\ref{eq:partie1GrazHol}
 ne se croissent pas dans la région $[0, \infty[$ quand $[DA_0]$ et supérieur à $0.25$.
+(Point(s) d'intersection: $x = {^1/_2} \left ( 1 \pm \sqrt{1 - 4 [DA_0]}\right )$).
 \end{itemize}
 
 \begin{figure}[h!]
@@ -211,7 +212,6 @@ figure~\ref{fig:partie1RefSimulations}) pour étudier mieux l'impact de la fonct
 Le tableau~\ref{tab:partie1appPropFctGrazing} donne une vue synoptique sur les maximas et l'état
 stationnaire du modèle pour les fonction de grazing étudiées.
 }
-
 \begin{table}[h!]
 \begin{center}
 \begin{tabular}{ | c | c c | c c | c c |}
@@ -233,17 +233,21 @@ des état stationnaire différents. Ce tableau donne une vue synoptique sur les 
   \label{tab:partie1appPropFctGrazing}
 \end{table}
 
-\begin{figure}[h!]
+\par{
+\todo
+}
+
+\begin{figure}[h]
   \includegraphics[width=0.5\textwidth]{partie1/refMic35.png}\hfill
   \includegraphics[width=0.5\textwidth]{partie1/refMic150.png}\\
   \includegraphics[width=0.5\textwidth]{partie1/refMicSeul35.png}\hfill
   \includegraphics[width=0.5\textwidth]{partie1/refMicSeul150.png}\\
   \includegraphics[width=0.5\textwidth]{partie1/refHol35.png}\hfill
   \includegraphics[width=0.5\textwidth]{partie1/refHol150.png}
-  \caption{Les simulations de références pour les fonctions differents de grazing (
+  \caption{Les simulations de références pour les fonctions diffèrents de grazing (
 fonction de Michaelis-Menton (eq.~\ref{eq:partie1GrazMic}, première ligne),
 Michaelis-Menton avec seuil (eq.~\ref{eq:partie1GrazMicSeul}, deuxième ligne) et fonction de
-Holling (eq.~\ref{eq:partie1GrazHol}, ligne terminale)) pour des temps final differents.
+Holling (eq.~\ref{eq:partie1GrazHol}, ligne terminale)) pour des temps final diffèrents.
 Avec un temps final de 35 jours la colonne de gauche montre une sous-partie des graphiques
 de la colonne de droite. La colonne de droite montre le cours de simulation jusqu'à un temps
 final de 150 jours.}
@@ -253,3 +257,7 @@ final de 150 jours.}
 \clearpage
 \subsection{Changements des paramètres}
 
+
+
+
+\subsection{Conclusion}
