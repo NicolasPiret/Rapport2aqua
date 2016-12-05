@@ -40,14 +40,17 @@ fonctions de broutage. Pour les analyses, les fonctions de broutage suivantes on
 }
 
 \begin{equation}
+  \text{Michaelis Menton:~~~}
   graz_{MSZ} = g_{MSZ} \max(T) {{[DA]}\over{kg_{MSZ}+[DA]}}
   \label{eq:partie1GrazMic}
 \end{equation}
 \begin{equation}
+  \text{Michaelis Menton avec seuil:~~~}
   graz_{MSZ} = g_{MSZ} \max(T) {{[DA]-[DA_0]}\over{kg_{MSZ}+([DA]-[DA_0])}}
   \label{eq:partie1GrazMicSeul}
 \end{equation}
 \begin{equation}
+  \text{Holling:~~~}
   graz_{MSZ} = g_{MSZ} \max(T) {{[DA]^2}\over{kg_{MSZ}^2+[DA]^2}}
   \label{eq:partie1GrazHol}
 \end{equation}
@@ -71,8 +74,8 @@ Pour peut mieux comprendre les équations du modèle, la grille~\ref{tab:partie1
 être intéressante. Elle donne un aperçu de la signification etc. de chaque terme dans les équations.
 }
 \par{
-Nous voulons encore pointer que les $T_{opt}$ et $d_{opt}$ ont les mêmes valeurs pour les diatomées et le
-mésozooplancton simulé. On a donc considerer que les deux espèces sont limitées par la tempèrature
+Nous voulons encore pointer que $T_{opt}$ et $d_{opt}$ ont les mêmes valeurs pour les diatomées et le
+mésozooplancton simulés. On a donc considerer que les deux espèces sont limitées par la tempèrature
 de la même façon.
 }
 
@@ -155,13 +158,43 @@ HOL & $k*\sqrt{{{m}\over{c-m}}}$ & ${{\mu_{DA}k \left ( 1 + {m}\over{c-m} \right
 \end{center}
   \caption{Les états stationnaires du système pour les fonctions de broutage differents. Les
 constantes supplémentaires utilisées ont était définies dans le texte précédent. Les formules sont en accord
-avec les simulations informatiques décrites ci-dessous.
+avec les simulations informatiques décrites ci-dessous (cmp grille~\ref{tab:partie1appPropFctGrazing} et
+figure~\ref{fig:partie1RefSimulations}).
 }
   \label{tab:partie1etatsStat}
 \end{table}
 \FloatBarrier
 
-\subsection{Simulation de référence}
+\par{
+Pas tous les états stationnaires listent dans la table~\ref{tab:partie1etatsStat} sont stables. Pour
+étudier la stabilité des états stationnaires différents on doit établir la matrice jacobienne.
+Malheureusement il nous a manque un peu du temps pour etudier la stabilité en détail.
+}
+
+\subsection{Comparision des fonction de grazing differents}
+
+\par{
+Dans une première étappe l'aissez nous discouter l'impact de la fonction de grazing. La courbe de les
+trois fonction differents a était tracée dans la figure~\ref{fig:partie1grazingFcts}.
+On peut observer les propriétés suivantes:
+}
+\begin{itemize}
+  \item Toutes les courbes sont en augmentation monotone et s'approchent à un taux croissance de valeur
+$g_{MSZ} max(T)$. La dérivée seconde des équations~\ref{eq:partie1GrazMic} et~\ref{eq:partie1GrazMicSeul}
+est strictement négatif. En conséquence les courbes sont courbées vers la gauche. Au contraire, la
+dérivée seconde de l'équation~\ref{eq:partie1GrazHol} est positive entre $[0, kg_{MSZ}]$
+et négatif dans la région $[kg_{MSZ}, \infty[$. Alors pour tous les valeurs dans la zone $[-kg_{MSZ},kg_{MSZ}]$
+la courbe est courbée vers la gauche. En dehors de cette région la courbe est courbée vers la droite.
+  \item Quand on est à des concentrations des diatomées faibles, l'équation~\ref{eq:partie1GrazMic}
+donne le taux croissance le plus élevé. Lorsque la concentration des diatomées dépasse $kg_{MSZ}$,
+l'équation~\ref{eq:partie1GrazHol} donne le taux croissance le plus élevé.
+  \item La courbe de l'équation~\ref{eq:partie1GrazMicSeul} est déplace par rapport de la
+courbe de l'équation~\ref{eq:partie1GrazMic} sur l'axe des abscisses par $[DA_0]$. Par conséquent,
+les courbes de l'équation~\ref{eq:partie1GrazMic} et de l'équation~\ref{eq:partie1GrazMicSeul}
+se croisent seulement à l'infini.
+  \item Les courbes de les équations~\ref{eq:partie1GrazMicSeul} et~\ref{eq:partie1GrazHol}
+ne se croissent pas dans la région $[0, \infty[$ quand $[DA_0]$ et supérieur à $0.25$.
+\end{itemize}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie1/grazingFct.png}
@@ -172,16 +205,51 @@ et~\ref{eq:partie1GrazHol} (HOL) en fonction de la concentration $[DA]$.
   \label{fig:partie1grazingFcts}
 \end{figure}
 
+\par{
+En utilisation ces propriétés, nous pouvons maintenant discouter certains simulations (voir
+figure~\ref{fig:partie1RefSimulations}) pour étudier mieux l'impact de la fonction de grazing.
+Le tableau~\ref{tab:partie1appPropFctGrazing} donne une vue synoptique sur les maximas et l'état
+stationnaire du modèle pour les fonction de grazing étudiées.
+}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ | c | c c | c c | c c |}
+\hline
+Fonction & \multicolumn{2}{c|}{Maximum $[DA]$} & \multicolumn{2}{c|}{Maximum $[MSZ]$} &
+\multicolumn{2}{c|}{État stat.} \\
+de grazing & Temps & Conc. & Temps & Conc. & $[DA]$ & $[MSZ]$ \\
+\hline
+MIC (voir eq.~\ref{eq:partie1GrazMic}) & $21.84$ & $87.474$ & $30.36$ & $39.992$ & $0.0$ & $0.0$ \\
+MIC\_SEUIL (voir eq.~\ref{eq:partie1GrazMicSeul}) & $22.86$ & $112.107$ & $32.04$ & $45.979$ & $7.273$ & $10.478$ \\
+HOL (voir eq.~\ref{eq:partie1GrazHol}) & $18.42$ & $60.979$ & $25.44$ & $29.276$ & $4.767$ & $7.016$ \\
+\hline
+\end{tabular}
+\end{center}
+  \caption{Les simulations (cmp figure~\ref{fig:partie1RefSimulations}) montrent des maximas et
+des état stationnaire différents. Ce tableau donne une vue synoptique sur les maximas
+(temps et concentration) et l'état stationnaire du modèle pour les fonctions de grazing différente
+(cmp fonctions~\ref{eq:partie1GrazMic},~\ref{eq:partie1GrazMicSeul} et~\ref{eq:partie1GrazHol}).}
+  \label{tab:partie1appPropFctGrazing}
+\end{table}
+
 \begin{figure}[h!]
   \includegraphics[width=0.5\textwidth]{partie1/refMic35.png}\hfill
-  \includegraphics[width=0.5\textwidth]{partie1/refMicSeul35.png}\\
-  \includegraphics[width=0.5\textwidth]{partie1/refHol35.png}\hfill
   \includegraphics[width=0.5\textwidth]{partie1/refMic150.png}\\
-  \includegraphics[width=0.5\textwidth]{partie1/refMicSeul150.png}\hfill
+  \includegraphics[width=0.5\textwidth]{partie1/refMicSeul35.png}\hfill
+  \includegraphics[width=0.5\textwidth]{partie1/refMicSeul150.png}\\
+  \includegraphics[width=0.5\textwidth]{partie1/refHol35.png}\hfill
   \includegraphics[width=0.5\textwidth]{partie1/refHol150.png}
-  \caption{\todo}
+  \caption{Les simulations de références pour les fonctions differents de grazing (
+fonction de Michaelis-Menton (eq.~\ref{eq:partie1GrazMic}, première ligne),
+Michaelis-Menton avec seuil (eq.~\ref{eq:partie1GrazMicSeul}, deuxième ligne) et fonction de
+Holling (eq.~\ref{eq:partie1GrazHol}, ligne terminale)) pour des temps final differents.
+Avec un temps final de 35 jours la colonne de gauche montre une sous-partie des graphiques
+de la colonne de droite. La colonne de droite montre le cours de simulation jusqu'à un temps
+final de 150 jours.}
   \label{fig:partie1RefSimulations}
 \end{figure}
 
-\subsection{Simulation de test 1}
+\clearpage
+\subsection{Changements des paramètres}
 
