@@ -241,7 +241,61 @@ mésozooplanction et des diatomées est relativement petite. Du coup le terme $g
 différences dans la pente des courbes. Ces différences se basent sur les diffèrente fonctions de grazing
 utilisées. L'équation de Michaelis-Menton (equation~\ref{eq:partie1GrazMic}) montre (en comparison avec
 les autres equations) les valeurs les plus grandes pour les concentrations des diatomées faibles.
-On consequence la pente de la courbe des
+On consequence dans cette simulation la pente de la courbe des diatomées commence à augmenter plus lentements
+que dans les autres simulations. Une fois la concentration de $[DA]$ est plus grande que $kg_{MSZ}$,
+c'est la fonction de Holling (equation~\ref{eq:partie1GrazHol}) qui limite le plus. Donc à partir de
+cette concentration c'est la fonction de Holling qui limite le plus.
+}
+\par{
+Au fil du temps, la concentration des mésozooplancton continuent de croître. Le plus grands le valeur 
+de cette concentration deviendra, les plus limitant devient l'impact de cette espèce sur la croissance
+des diatomées (terme: $-graz_{MSZ}$). C'est pour ça que à partir d'un moment donné, la concentration des diatomées commence
+à diminuer.
+}
+\par{
+Peu de temps après la concentration des diatomées commence à décliner la croissance des mésozooplanctons
+atteint également un maximum. En raison du gaspillage alimentaire le terme de croissance \todo
+}
+\par{
+Comme on peut voir dans le tableau~\ref{tab:partie1appPropFctGrazing}) on observe quand même des
+grands différents dans la hauteure et le moment les maximums appartient
+Dans les sous-chapitre souivants nous décortiquons explicitement ces différences en fonction de la
+fonction de grazing.
+}
+\subsubsection{La fonction de Michaelis-Menton}
+\par{
+La biomasse phyto max et la biomasse zoo max arrivent plus tard que pour Holling et sont plus élevées
+(phyto: 88 à 20 jours, zoo: 40 à 30 jours). En effet, la valeur du taux de grazing aux hautes
+concentrations est plus faible pour Mic que pour Holling, et donc le DA peut croître plus que dans
+le cas de Holling. Cependant, la pop de DA va tomber à 0 à 30 jours. En effet, à basse concentration
+(lorsque la concentration de MSZ est grande, la concentration en DA est faible), le taux de grazing
+de Mic est plus important que celui de Holling. Or, comme DA tombe à 0, le taux de grazing tombe
+aussi à 0, et donc seul le taux de mortalité de MSZ joue un role jusqu'à ce que MSZ tombe à 0. 
+}
+\subsubsection{La fonction de Michaelis-Menton avec seuil}
+\par{
+La biomasse phyto et zoo max arrivent encore plus tard, et sont encore plus élevées. De la même manière,
+à haute concentration, le taux de grazing est encore plus faible que Mic et Holling, et donc les deux
+pop ont plus de temps pour croître. Quand la population de DA diminue car la pop de MSZ est trop importante,
+elle va commencer à diminuer. Or, a faible concentration, le taux de grazing de Mic-Seuil est plus faible
+que Holling, et donc l'équilibre se fait à des concentrations plus importantes.
+Ici, comme le taux de croissance en fonction de la concentration possède une seuil (DA0), l'équilibre
+s'effectue autour de ce seuil, plus ou moins DA0. 
+}
+\subsubsection{La fonction de Holling}
+\par{
+%Dans le cas de l'équation de Holling (voir equation~\ref{eq:partie1GrazHol}) la croissance du
+%phytoplancton (terme croissance > terme mortalité) persiste de $t=0$ à $t\approx 18$ jours
+%(voir table~\ref{tab:partie1appPropFctGrazing}). Avant d'atteindre
+%le max (terme croissance = terme mortalité) qui vaut 60 mmol/m3. Après ce max, la concentration en
+%phytoplancton diminue car le terme de mortalité > terme de croissance, jusqu'à atteindre un min à
+%28 jours à une concentration de 3. En effet, au début, il n'y a que très peu de MSZ (concentration
+%bien plus faible que DA initial). Ainsi, la croissance du phyto va entrainer une croissance du zoo
+%(terme grazMSZ augmente selon DA^2). Cette augmentation de MSZ va faire qu'on aura terme croissance
+%DA = terme mortalité DA. Puis comme DA diminue, MSZ fini par diminuer jusqu'à un minimum à 65 jours
+%à une concentration de 8. Après le minimum de DA, la population de DA va réaugmenter car comme DA
+%faible, le terme grazing est faible et donc le terme croissance reprend le dessus. Les deux pop
+%finissent par s'équilibrer après 80 jours. 
 }
 
 \begin{figure}[h]
@@ -264,7 +318,81 @@ final de 150 jours.}
 \clearpage
 \subsection{Changements des paramètres}
 
+\par{
+Dans une deuxième étappe on a aussi modifier quelques paramètres pour explorer leur impact sur le system.
+}
 
+\subsubsection{Test 1 - Augmonter le taux de grazing maximal}
+\par{
 
+}
+\begin{figure}
+  \includegraphics[width=\textwidth]{partie1/test1x35.png}
+  \caption{\todo la constante $g_{MSZ_{max0}}$ était augmonter de $1.2$ à $2$.}
+  \label{fig:partie1t1}
+\end{figure}
+\par{
+Les maxima sont atteint plus rapidement, et atteignent une valeur plus faible pour les deux population.
+En effet, le taux de grazing a augmenté, et donc, le terme croissance des diatomées devient plus rapidement
+égal à la mortalité. De la même manière, les MSZ croissent moins que dans la ref, puisque DA est plus faible.
+}
+\FloatBarrier
+
+\clearpage
+\subsubsection{Test 2 - Augmonter le demi-saturation des mésozooplancton}
+\begin{figure}
+  \includegraphics[width=\textwidth]{partie1/test2x35.png}
+  \caption{\todo}
+  \label{fig:partie1t2}
+\end{figure}
+\par{
+Augmenter la constante de demi-saturation de MSZ entraine une diminution de leur affinité pour les DA,
+et donc une diminution du taux de grazing. Ainsi, les DA atteignent leur max plus tard, et le max est plus
+important. Ceci permet une croissance plus importante pour le MSZ et donc le max est atteint plus tard,
+et a une valeur plus grande. 
+}
+\FloatBarrier
+
+\clearpage
+\subsubsection{Test 3 - Diminuer le demi-saturation des mésozooplancton}
+\begin{figure}
+  \includegraphics[width=\textwidth]{partie1/test3x35.png}
+  \caption{\todo}
+  \label{fig:partie1t3}
+\end{figure}
+\par{
+On diminue la constante de demi-saturation, donc augmentation de l'affinité de MSZ pour DA, car taux de
+grazing plus grand à même concentration. Ainsi, DA a un max plus faible qui arrive plus vite, et donc
+MSZ pareil.
+}
+\FloatBarrier
+
+\clearpage
+\subsubsection{Test 4 - Augmontation de l'efficacité de grazing}
+\begin{figure}
+  \includegraphics[width=\textwidth]{partie1/test4x35.png}
+  \caption{\todo}
+  \label{fig:partie1t4}
+\end{figure}
+\par{
+Le max de phyto est atteint plus rapidement (et est plus faible), car le MSZ consomme plus efficacement
+les DA que dans la ref, car le terme mortalité de DA compense plus rapidement le terme de croissance.
+Ainsi, pour une même concentration de DA, on aura une plus grande concentration de MSZ.
+}
+\FloatBarrier
+
+\clearpage
+\subsubsection{Test 5 - Diminer la mortalité des mésozooplanctons}
+\begin{figure}
+  \includegraphics[width=\textwidth]{partie1/test5x35.png}
+  \caption{\todo}
+  \label{fig:partie1t5}
+\end{figure}
+\par{
+Taux de mortalité plus faible, donc le zoo va diminuer moins rapidement que dans la ref. De plus, puisque
+le taux est plus faible, plus de MSZ et donc, la concentration de DA est plus faible et est atteinte plus
+rapidement.
+}
+\FloatBarrier
 
 \subsection{Conclusion}
