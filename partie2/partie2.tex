@@ -2,7 +2,13 @@
 
 \subsection{Description du module}
 
-\begin{figure}
+\par{
+Dans le quatrième cours on a agrandis le modèle mathématique. On considére maintenant deux espèce de
+proies qui sont consommées par le mésozooplancton de façon sélectif ou non-sélectif. Du coup le modèle
+conceptuel se changera. On peut admirer le nouveau modèle conceptuel dans la figure~\ref{fig:partie2DiagConc}.
+}
+
+\begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie2/diagConc.png}
   \caption{Le modèle conceptuel du système étudié dans le cinquième cours. Par rapport
 au modèle conceptuel du quatrième cours (voir figure~\ref{fig:partie1DiagConcept}) on
@@ -11,6 +17,11 @@ servir comme proie.
 }
   \label{fig:partie2DiagConc}
 \end{figure}
+
+\par{
+Puisque le diagramme conceptuel était changé on doit revaloriser les équations. Les équations nouveux regardent
+comme suit:
+}
 
 \begin{equation}
   {{d[DA]}\over{dt}} =
@@ -37,7 +48,7 @@ servir comme proie.
 \end{equation}
 
 \par{
-Grazing non sélectif
+Dans le cas du grazing non sélectif, on considére aussi les équations suivants:
 }
 
 \begin{equation}
@@ -58,7 +69,7 @@ Grazing non sélectif
 \end{equation}
 
 \par{
-Grazing sélectif
+Et dans le cas du grazing sélectif, on considére plutôt les équations suivis:
 }
 
 \begin{equation}
@@ -76,7 +87,23 @@ Grazing sélectif
   \label{eq:partie2selEq3}
 \end{equation}
 
-\begin{table}
+\par{
+Par rapport au travail pratique précendent on peut garder tous les valeurs pour les différents paramètres.
+Seulement pour le cas du grazing sélectif, on introduire deux constantes de grazing différentes pour les
+deux espèces. Ces constantes ont les valeurs suivantes:
+}
+\[
+kg_{MSZ/DA} = 10 {^{mmol~C}/_{m^3}}
+\]
+\[
+kg_{MSZ/DINO} = 20 {^{mmol~C}/_{m^3}}
+\]
+
+\par{
+
+}
+
+\begin{table}[h!]
 \begin{center}
 \begin{tabular}{ | c | c | c | c | c | c | }
 \hline
@@ -128,51 +155,50 @@ De plus, on voit que les concentrations minimales ne sont pas les mêmes. En eff
   \label{fig:partie2Test2}
 \end{figure}
 
-\subsection{Conclusion}
 
-Ref non selec:
-
+\subsection{Ref non selec}
 
 
-Ref selec:
+
+\subsection{Ref selec}
 
 
-Test 1 non selec:
+\subsection{Test 1 non selec}
 
 Ici, bien que les constantes de demi saturation des taux de grazing soient les mêmes, les concentrations initiales en Diatomées et Dinoflagellés sont différentes. Ainsi, puisque la concentration en Diatomées est diminuée de 10 mais que la concentration en Dinoflagellés est augmentée de 10, et que les deux populations de phytoplancton ont exactement les mêmes paramètres, l'évolution du zooplancton est exactement la même que dans le cas de la référence. Cependant, les Diatomées atteignent une concentration maximum beaucoup plus élevée que dans le cas de la référence (65 mmol.m-3), tandis que la concentration maximum des Dinoflagellés est plus faible (20 mmol.m-3). La somme des concentrations du phytoplancton est exactement la même que dans le cas de la référence, puisqu'une fois de plus, les deux populations de phytoplancton ont exactement les mêmes paramètres.
 
-Test 1 selec: 
+\subsection{Test 1 selec}
 
 Dans cette simulation, l'affinité pour les Dinoflagellés est plus faible que pour les Diatomées. Cependant, la concentration initiale en Dinoflagellés est plus faible que dans le cas de la référence, ce qui explique que la concentration maximum en Dinoflagellés atteinte est plus faible que dans le cas de la référence.
 De la même manière, l'affinité pour les Diatomées est plus grande, mais la concentration initiale en Diatomées est plus grande, ce qui explique que la concentration maximum en Diatomées est plus élevée que dans le cas de la référence.
 De plus, puisque l'affinité pour les Diatomées est plus grande et que la concentration initiale en Diatomées est plus grande, le maximum de biomasse est atteint plus rapidement. 
 La concentration maximum en zooplancton est cependant plus faible que dans le cas de la référence. Ainsi, augmenter la concentration initiale de la proie préférée entraîne une diminution du maximum du zooplancton. 
 
-Test 2 non selec:
+\subsection{Test 2 non selec}
 
 La concentration initiale des Dinoflagellés a été augmentée de 10 mmol.m-3, tandis que la concentration initiale des Diatomées a été diminuée de 10 mmol.m-3. Ici aussi, tous les paramètres des deux populations de phytoplancton sont les mêmes. Ainsi, la concentration maximum en Dinoflagellés est plus importante que dans le cas de la référence, et la concentration maximum en Diatomées est plus faible. Cependant, la somme des deux concentrations des deux populations de phytoplancton est la même que dans le cas de la référence, et ainsi, l'évolution du zooplancton l'est aussi.
 
-Test 2 selec:
+\subsection{Test 2 selec}
 
 La concentration initiale en Dinoflagellés, qui sont moins appréciés que les Diatomées, est plus grande que dans le cas de la référence. Inversement, la concentration initiale des Diatomées est plus faible. Ainsi, cette situation mène à un taux de grazing des Diatomées faible, comme on peut le remarquer dans l'équation (REF EQ. TAUX GRAZING DA), et à un taux de grazing des Dinoflagellés élevé, comme on peut le remarquer dans l'équation (REF EQ. TAUX GRAZING DINO). Ceci permet aux Diatomées de croître sur une plus longue période, et d'atteindre un maximum de biomasse relativement plus grand que dans le cas de la référence. Inversement, la population de Dinoflagellés atteint un maximum relativement plus faible, et atteint ce maximum plus tôt que dans le cas de la référence. De plus, on peut voir que diminuer la concentration de la proie la plus appréciée entraîne une augmentation du maximum de concentration du zooplancton.
 
-Test 3 nonselec:
+\subsection{Test 3 nonselec}
 
 Ici, les concentrations initiales ainsi que tous les paramètres sont les mêmes pour les deux espèces de phytoplancton. Cependant, la concentration initiale en zooplancton est 10 fois plus faible que dans le cas de la référence. Ainsi, les deux espèces de phytoplancton croissent pendant une plus longue période, et atteignent donc un maximum de biomasse plus important. Puisque ces populations de phytoplancton atteignent un maximum de biomasse plus tard, alors le zooplancton atteint aussi le sien plus tard, et celui-ci est donc plus grand. 
 
-Test 3 selec:
+\subsection{Test 3 selec}
 
 Dans cette simulation, la concentration initiale en zooplancton est 10 fois inférieure que dans le cas de la référence. Ceci permet aux deux populations de phytoplancton de croître plus longtemps et donc d'atteindre des maxima de concentration plus grands. Ainsi, la population de zooplancton peut aussi croître plus longtemps et donc atteindre une concentration maximum plus grande. De plus, les Diatomées étant l'espèce la plus appréciée par le zooplancton, celle-ci atteindra son maximum avant les Dinoflagellés.
 
-Test 4 non selec:
+\subsection{Test 4 non selec}
 
 Dans cette simulation, la concentration initiale en zooplancton est doublée par rapport à la référence. Ainsi, la pression de grazing est telle qu'elle empêche toute croissance des deux populations de phytoplancton. En effet, cette concentration initiale importante fait que le terme de mortalité des deux espèces phytoplanctoniques est toujours supérieur au terme de croissance (REF EQ. dDA/dt et dDINO/dt).
 
-Test 4 selec:
+\subsection{Test 4 selec}
 
 De la même manière que dans la simulation précédente, la concentration initiale du zooplancton est tellement grande qu'elle empêche la croissance des Diatomées, qui sont les proies préférées. En effet, le terme de croissance est toujours inférieur au terme de mortalité, dans l'équation de l'évolution des Diatomées. Cependant, la population de Dinoflagellés peut quand même croître, car le zooplancton a une affinité plus faible pour ceux-ci.
 
-Conclusion:
+\subsection{Conclusion}
 
 Nous pouvons constater que dans le cas d'un grazing non sélectif, si nous modifions les concentrations initiales des populations de phytoplancton, mais que la somme de ces concentrations restent les mêmes, alors l'évolution du zooplancton reste la même. Si nous gardons les mêmes conditions initiales pour les deux populations de phytoplancton, alors les deux populations vont suivre exactement la même évolution. Cela est du au fait que tous les paramètres, pour les deux populations de phytoplancton, sont les mêmes. En réalité, même si le grazing du zooplancton n'est pas sélectif, nous devrions observer des différences entre les évolutions des populations de phytoplancton.
 De plus, nous pouvons constater que le zooplancton a toujours une concentration plus grande quand le grazing est sélectif que quand il est non sélectif. En effet, dans le cas sélectif, nous avons diminué l'affinité du zooplancton pour une des espèces, par rapport au cas non sélectif. Si nous avions augmenté l'affinité pour une des espèces, nous aurions observé une tendance totalement inverse.

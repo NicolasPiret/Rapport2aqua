@@ -432,9 +432,50 @@ référence.}
 \par{
 Ici on a diminué le taux de la mortalité du mésozooplancton (voir figure~\ref{fig:partie1t5}).
 Pour un taux de mortalité plus faible, la concentration de mésozooplancton diminura moins rapidement que
-dans la simulation de référence. De plus, puisque le taux de mortalité est faible, on observe des
+dans la simulation de référence. De plus, puisque le taux de mortalité est plus faible, on observe des
 concentrations du mésozooplancton plus élvées. De façon inverse, quand la concentration du mésozooplancton
 est plus élvée, les diatomées pouvent croître moins facillement. Donc la concentration des diatomées est
 plus faible et le maximum est atteint plus rapidement.
 }
 \FloatBarrier
+
+\subsection{Conclusion}
+\par{
+Dans la première partie on a analysé l'influence des différentes fonctions de broutage sur le
+modèle mathématique. Ici, on obtient des grands différents dans le tracé des courbes simulées pour
+les différentes fonctions de broutage considérées. Plus les valeurs de taux de croissance calculées 
+sont élevée pour des concentrations faibles des diatomées, le plus faible est la concentration des
+diatomées et du mésozooplancton de l'état staionnaire vers lequel le système converge.
+Dans les cas extrêmes, sur le long terme le système predits l'extinction des deux espèces ($graz_{MSZ}$
+est assez grand pour les concentrations des diatomées faibles).
+}
+\par{
+Dans la nature on voit que les prédateurs normallement n'arrivent pas à attraper toute la proie.
+Une partie (espérons assez grande) de la population échappent aux efforts des prédateurs.
+Cette partie assurent la survie de la proie (et à long terme aussi la survie du prédateur).
+On peut supposer que le plus la populations de proies est faibles, le plus de temps les prédateurs ont
+besoin pour détecter la proie.
+On ne peut pas bien simuler cette propriété en outilisent la fonction de Michaelis-Menton. La fonction
+reagisse simplement trop à des changements faibles dans le champ de concentration des diatomées faibles.
+En outre, dans la nature c'est aussi improbable d'observer une valeur criticale ($[DA_0]$) à partir de
+laquelle le taux de grazing augmonte en forte hausse comme ``proposé'' par la fonction de Michaelis-Menton
+avec seuil.
+}
+\par{
+En conséquence on a choisis la fonction de Holling dans la suite / pour les simulations suivantes.
+Cependant, les résultats doivent aussi être applicables pour les autres fonctions de grazing
+(MIC et MIC\_seuil).
+}
+\par{
+On peut constater, que les paramètres change dans la deuxième partie se trouvent tous dans
+l'équation~\ref{eq:partie1DiffEq2}. Dans cette mesure, ces modifications montrent des effets similaires.
+Dans tous les cas, le moment éxact quand le taux de croissance pour le mésozooplancton égal au taux de
+la mortalité décalera.
+}
+\par{
+Le plus tard le maximum est atteint, le plus du temps le mésozooplancton et les diatomées ont pour
+croître. Du coup les concentrations maximals sont plus élvées.
+Dans le cas inverse, quand le maximum en concentration du mésozooplancton est atteint plus tôt on
+observe des observations inverées. C'est à dire, le plus tôt les maximas se déroulent, le plus les
+concentrations maximales observées des diatomées et des mésozooplancton devienent faibles.
+}
