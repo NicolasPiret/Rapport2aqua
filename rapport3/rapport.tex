@@ -1,0 +1,243 @@
+\documentclass[12pt,a4paper]{article}
+
+%\usepackage[ngerman]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%\usepackage[hyphens]{url}
+\usepackage{pbox}
+\usepackage{float}
+\usepackage[breaklinks]{hyperref}
+\usepackage[hyphenbreaks]{breakurl}
+\usepackage{breakurl}
+\usepackage{placeins}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage{titlesec}
+\usepackage{hvfloat}
+\usepackage{lipsum}
+\usepackage{palatino}
+\usepackage{a4wide}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{colortbl}
+\usepackage{endnotes}
+\usepackage{inconsolata}
+\usepackage{epstopdf}
+\usepackage{blindtext}
+\usepackage{color}
+\usepackage{pdflscape}
+\usepackage{capt-of}
+\usepackage{sidecap}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tikzsymbols}
+\usepackage{phaistos}
+\usepackage{bbding}
+\usepackage[francais,english,german]{babel}
+%\usepackage{fontawesome}
+%\usepackage[small,compact]{titlesec}
+\usepackage{tikz}
+%\usetikzlibrary{arrows,automata}
+
+\definecolor{light-gray}{gray}{0.95}
+
+\usepackage{booktabs}                   %gives \toprule, \midrule and \bottomrule for professional looking tables
+\usepackage{fixltx2e}                   %fixltx2e adds \textsubscript{}, textsubscript should already be there
+\usepackage{threeparttable}             %Provides notes in tables (in addition to the caption)
+\usepackage{tabularx}                   %Defines column type X for tables with auto linebreaks. For REALLY big tables use one of the more specialized packages
+\usepackage{caption}
+%\usepackage{subcaption}
+%\captionsetup{margin=0.8cm,aboveskip=8mm,labelfont=bf,labelformat=simple,labelsep=period,textfont=small}
+% \setcounter{tocdepth}{2}        %Two should be default anyway
+% \setlength{\parskip}{1ex plus 0.5ex minus 0.5ex}        %Space of a paragraph, note the variability, gives latex more room for optimization
+\titlespacing{\section}{0pt}{20pt}{16pt}
+\titlespacing{\subsection}{0pt}{20pt}{16pt}
+\titlespacing{\subsubsection}{0pt}{20pt}{16pt}
+\setlength{\parindent}{0pt}       %Basically a whole lot of \noindents before every paragraph ;)
+\usepackage{nicefrac}                   %fraction style (a/b) use with \nicefrac{}{}
+% \setlength{\headheight}{15pt}
+% \usepackage{emptypage}          %Empty pages are really empty, no header or anything
+
+\lstset{
+ language=AWK,                % choose the language of the code
+ basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+ numbers=left,                   % where to put the line-numbers
+ numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+ stepnumber=1,                   % the step between two line-numbers. If it is 1 each line will be numbered
+ numbersep=10pt,                  % how far the line-numbers are from the code
+ showspaces=false,               % show spaces adding particular underscores
+ showtabs=false,                 % show tabs within strings adding particular underscores
+ frame=single,   		% adds a frame around the code
+ tabsize=4,  		% sets default tabsize to 2 spaces
+ captionpos=t,   		% sets the caption-position to bottom
+ breaklines=true,    	% sets automatic line breaking
+ breakatwhitespace=false,    % sets if automatic breaks should only happen at whitespace
+ showstringspaces=false,
+ mathescape=false,		%allo entering math environment
+ backgroundcolor=\color{light-gray},
+ morekeywords={init, par, foreach, return, min, allocate, abs, delete, is_member, insert},            % if you want to add more keywords to the set
+ keywordstyle=\color{blue},          % keyword style
+ commentstyle=\color{OliveGreen},       % comment style
+ stringstyle=\color{orange}
+}
+
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=true,          % non-Latin characters in AcrobatÂs bookmarks
+    pdftoolbar=true,        % show AcrobatÂs toolbar?
+    pdfmenubar=true,        % show AcrobatÂs menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={Fit},    % fits the width of the page to the window
+    pdftitle={Homework 3:  Modélisation des écosystèmes aquatiques - Nicolas Piret et Yann Sp\"ori},    % title
+    pdfauthor={Nicolas Piret et Yann Sp\"ori},     % author
+    %pdfsubject={Subject},   % subject of the document
+    %pdfcreator={Creator},   % creator of the document
+    %pdfproducer={Producer}, % producer of the document
+    %pdfkeywords={keywords}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=false,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
+
+\newcommand{\citeme}[1]{\Large\textsuperscript{\textbf{\textcolor{Blue}{cite me!}(#1)}}\normalsize}
+\newcommand{\todo}{\textbf{\textcolor{red}{ TODO! }}}
+\newcommand{\refer}[1]{\ref{#1}~(page~\pageref{#1})}
+\newcommand{\al}[0]{$\alpha$}
+\newcommand{\alimp}[0]{$\alpha$\,IMP\ }
+\newcommand{\alimps}[0]{$\alpha$\,IMPs\ }   %These are not nice, could have used sth like \al-IMPs or {\alimp}s
+\newcommand{\be}[0]{$\beta$}
+\newcommand{\beimp}[0]{$\beta$\,IMP\ }
+\newcommand{\beimps}[0]{$\beta$\,IMPs\ }
+\newcommand{\supp}[0]{Supplementary Material\ }
+\newcommand{\angs}[0]{\,\AA}
+\newcommand{\method}[1]{\textbf{#1}}
+\newcommand{\ie}[0]{\textit{i.e.\ }}
+\newcommand{\eg}[0]{e.g.\ }
+\newcommand{\cf}[0]{cf.\ }
+\newcommand{\chap}[0]{cp.\ }
+\newcommand{\dbid}[1]{{\fontfamily{phv}\selectfont\footnotesize\lowercase{#1}}}   
+\newcommand{\figintro}[1]{\textbf{#1}}
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand{\highlight}[1]{%
+  \colorbox{yellow!50}{$\displaystyle#1$}}
+\newcommand{\highlightgreen}[1]{%
+  \colorbox{green!50}{$\displaystyle#1$}}
+\newcommand{\hr}[0]{
+\par{
+\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}}
+}
+}
+
+\usepackage[sort&compress,comma,numbers]{natbib}
+
+% table of contents
+\renewcommand{\contentsname}{Table of contents}
+
+% Bibliography
+\usepackage[numbib,notlof,notlot,nottoc,section]{tocbibind}
+\renewcommand\tocbibname{References}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\usepackage{xcolor}
+\definecolor{c0}{Hsb}{000,1.0,0.5}
+\definecolor{c1}{Hsb}{024,1.0,0.5}
+\definecolor{c2}{Hsb}{048,1.0,0.5}
+\definecolor{c3}{Hsb}{072,1.0,0.5}
+\definecolor{c4}{Hsb}{096,1.0,0.5}
+\definecolor{c5}{Hsb}{120,1.0,0.5} 
+\definecolor{c6}{Hsb}{144,1.0,0.5}
+\definecolor{c7}{Hsb}{168,1.0,0.5}
+\definecolor{c8}{Hsb}{192,1.0,0.5}
+\definecolor{c9}{Hsb}{216,1.0,0.5}
+\definecolor{cA}{Hsb}{240,1.0,0.5}
+\definecolor{cB}{Hsb}{264,1.0,0.5}
+\definecolor{cC}{Hsb}{288,1.0,0.5}
+\definecolor{cD}{Hsb}{312,1.0,0.5}
+\definecolor{cE}{Hsb}{336,1.0,0.5}
+\definecolor{cF}{Hsb}{360,1.0,0.5}
+
+\titleformat{\section}[block]
+  {\fontsize{12}{15}\bfseries\sffamily}%\filcenter}
+  {\thesection}
+  {1em}
+  {\MakeUppercase}
+\titleformat{\subsection}[block]
+  {\fontsize{12}{15}\bfseries\sffamily}
+  {\thesubsection}
+  {1em}
+  {}
+\titleformat{\subsubsection}[block]
+  {\fontsize{12}{15}\bfseries\sffamily}
+  {\thesubsubsection}
+  {1em}
+  {}
+
+\begin{document}
+
+% TITLE PAGE
+{
+\selectlanguage{francais}
+\pagenumbering{gobble}
+\raggedleft
+\includegraphics[width=0.15\textwidth]{ulbnorm.jpg}
+\par\vspace{-1.8cm}
+\centering
+{\scshape\LARGE Université libre de Bruxelles \par}
+\vspace{2.4cm}
+{\Huge\bfseries BING-F525 - Modélisation des écosystèmes aquatiques\par}
+\vspace{1.2cm}
+{\Large\bfseries Travaux Pratiques\par}
+\vspace{1.0cm}
+{\LARGE\bfseries Degradation de la matière organique par les bacteries et de remineralisation\par}
+\vspace{1.5cm}
+%\vfill
+{\Large\itshape Nicolas Piret\\Master en bioingénieur : sciences et technologies de l'environnement\par}
+\vspace{0.5cm}
+{\Large\itshape Yann Spöri\\Master en bioinformatique et modélisation\par}
+\vfill
+cours donné par\par
+Nathalie Gypens%\textsc{Brown}
+\vfill
+% Bottom of the page
+\begin{center}{\large \today}\end{center}
+}
+\newpage
+\pagenumbering{arabic}
+% END TITLE PAGE
+
+% add table of contents
+\selectlanguage{francais} % Dit a babel que le rapport est écrit en français 
+\tableofcontents
+\newpage
+
+% introduction
+%\input{introductionGeneral.tex}
+%\FloatBarrier
+% la première partie
+\input{partie1/partie1.tex}
+\FloatBarrier
+% la deuxième partie
+%\input{partie2/partie2.tex}
+%\FloatBarrier
+% conclusion
+%\input{conclussionGeneral.tex}
+%\FloatBarrier
+
+\end{document}
