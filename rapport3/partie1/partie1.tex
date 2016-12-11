@@ -48,49 +48,69 @@ Avec
   \label{fig:partie1ref}
 \end{figure}
 
-\subsection{Test 1}
+\par{
+Sur le graphique de l'\'evolution de la concentration du TOC en fonction du temps, nous pouvons observer que la concentration d\'ecro\^it de 0 \`a 6 jours et atteint une valeur nulle apr\`es 6 jours. En effet, ce TOC est hydrolys\'e en SBC, qui d\'epend de la concentration en bact\'eries et de la concentration en TOC. Ainsi, au d\'ebut de la simulation, la d\'ecroissance du TOC est due \`a la grande concentration en TOC (car la valeur de ec est grande). Ensuite, la d\'ecroissance de la concentration de TOC est due \`a une augmentation de la concentration en bact\'eries.
+}
+\par{
+Sur le graphique de l'\'evolution de la concentration en SBC, on peut voir que sa concentration augmente de 0 \`a 4 jours, ou elle atteint une valeur maximale de 4,8, puis d\'ecroit de 4 \`a 6 jours, jusqu'\`a atteindre une valeur nulle. En effet, l'\'evolution de la concentration en SBC est due \`a la concentration en TOC et en SBC. Ainsi, au d\'ebut de la simulation, la concentration en TOC est importante, et celle en SBC est faible, et donc, le terme d'augmentation de la concentration est sup\'erieur au terme de diminution. A 4 jours, les deux termes s'\'egalisent, car la concentration en TOC diminue et car la concentration en SBC augmente. Finalement, apr\`es 4 jours, le terme de diminution de la concentration en SBC diminue jusqu'\`a atteindre une valeur nulle, un peu apr\`es que le TOC atteigne une valeur nulle.
+}
+
+\subsection{Tests de sensitivit\'e}
+\subsubsection{Test 1}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie1/Test1.png}
-  \caption{Simulation de r\'ef\'erence, pour un mod\`ele \`a plusieurs pools de mati\`ere organique
+  \caption{Simulation en divisant par deux la valeur de la constante d'ectohydrolyse de TOC \`a temp\'erature optimale
   }
   \label{fig:partie1test1}
 \end{figure}
 
-\subsection{Test 2}
+
+
+\subsubsection{Test 2}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie1/Test2.png}
-  \caption{Simulation de r\'ef\'erence, pour un mod\`ele \`a plusieurs pools de mati\`ere organique
+  \caption{Simulation en r\'eduisant la valeur de la constante d'hydrolyse de TOC
   }
   \label{fig:partie1test2}
 \end{figure}
 
-\subsection{Test 3}
+\subsubsection{Test 3}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie1/Test3.png}
-  \caption{Simulation de r\'ef\'erence, pour un mod\`ele \`a plusieurs pools de mati\`ere organique
+  \caption{Simulation en r\'eduisant la valeur du taux de croissance des bact\'eries
   }
   \label{fig:partie1test3}
 \end{figure}
 
-\subsection{Test 4}
+\subsubsection{Test 4}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie1/Test4.png}
-  \caption{Simulation de r\'ef\'erence, pour un mod\`ele \`a plusieurs pools de mati\`ere organique
+  \caption{Simulation en r\'eduisant la valeur de la constante d'uptake de SBC \`a temp\'erature optimale
   }
   \label{fig:partie1test4}
 \end{figure}
 
-\subsection{Test 5}
+\subsubsection{Test 5}
 
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie1/Test5.png}
-  \caption{Simulation de r\'ef\'erence, pour un mod\`ele \`a plusieurs pools de mati\`ere organique
+  \caption{Simulation en r\'eduisant la valeur du rapport NC du TOC
   }
   \label{fig:partie1test5}
 \end{figure}
 
+\subsubsection{Test 6}
+
+\begin{figure}[h!]
+  \includegraphics[width=\textwidth]{partie1/Test6.png}
+  \caption{Simulation en supprimant l'effet de la nitrification
+  }
+  \label{fig:partie1test6}
+\end{figure}
+
+\subsection{Conclusion}

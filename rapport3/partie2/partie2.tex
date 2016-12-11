@@ -23,7 +23,8 @@ Pour ce qui est de l'\'evolution de la concentration en bact\'eries, celle-ci au
 Pour l'\'evolution de la concentration en NH4, celle-ci augmente rapidement au d\'ebut de la simulation, de 0 \`a 5 jours. La vitesse de croissance de NH4 va ensuite diminuer, pour atteindre un maximum de concentration de 14 mmolC.m-3 apr\`es 17 jours, pour enfin diminuer. Ainsi, ceci veut dire que le terme positif dans l'\'equation de l'\'evolution du NH4 est positif et sup\'erieur au terme de nitrification. Cela veut aussi dire que vNH4 est positif, et que donc les bact\'eries relarguent du NH4 dans leur environnement. Au d\'ebut de la simulation, la concentration en NH4 augmente rapidement car relativement beaucoup de bact\'eries sont pr\'esentes, et car la concentration en NH4 est faible, ce qui entra\^ine une valeur de nitrification faible. Ainsi, l'\'evolution de la concentration en NH4 va suivre l'\'evolution de la concentration en bact\'eries. Puis, la concentration va devenir relativement plus faible que celle en NH4, entrainant une diminution de la vitesse de croissance de la concentration en NH4. Finalement, la concentration en NH4 sera telle que l'\'evolution de cette concentration va devenir n\'egative.
 }
 
-\subsection{Test 1}
+\subsection{Tests de sensitivit\'e}
+\subsubsection{Test 1}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie2/Test1.png}
@@ -42,11 +43,11 @@ En d\'ebut de simulation, nous pouvons observer une diminution de la concentrati
 De la m\^eme mani\`ere que pour la simulation de r\'ef\'erence, l'\'evolution de la concentration en NH4 va suivre une tendance semblable \`a l'\'evolution de la concentration en bact\'eries.
 }
 
-\subsection{Test 2}
+\subsubsection{Test 2}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie2/Test2.png}
-  \caption{Simulation de r\'ef\'erence, pour un mod\`ele \`a plusieurs pools de mati\`ere organique
+  \caption{Simulation en doublant les concentrations initiales de P1 et D1, et en divisant par deux celles de P2 et D2
   }
   \label{fig:partie2test2}
 \end{figure}
@@ -61,11 +62,11 @@ Bien que la concentration en P1 soit importante en d\'ebut de simulation, elle n
 La concentration en SBC va augmenter en d\'ebut de simulation, lorsque les concentrations en D1 et D2 sont importantes. Puis, puisque l'hydrolyse de D1 contribue de mani\`ere plus importante \`a l'augmentation de SBC, la concentration en SBC va diminuer lorsque celle en D1 atteint une valeur proche de 0. Ainsi, les bact\'eries vont cro\^itre lorsque la concentration en SBC augmente, et contrairement \`a la simulation de r\'ef\'erence, vont d\'ecroitre lorsque la concentration en SBC tombe proche de 0, car la concentration en D2 n'est plus suffisante pour maintenir une augmentation de la concentration en bact\'eries.
 }
 
-\subsection{Test 3}
+\subsubsection{Test 3}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie2/Test3.png}
-  \caption{Simulation de r\'ef\'erence, pour un mod\`ele \`a plusieurs pools de mati\`ere organique
+  \caption{Simulation en doublant la valeur du param\`etre d'ectohydrolyse de D1 \`a temp\'erature optimale 
   }
   \label{fig:partie2test3}
 \end{figure}
@@ -74,12 +75,12 @@ La concentration en SBC va augmenter en d\'ebut de simulation, lorsque les conce
 Nous avons augment\'e la biod\'egradabilit\'e de D1 par rapport \`a D2. Ainsi, la concentration en D1 va diminuer plus rapidement que dans le cas de la r\'ef\'erence, ce qui va entra\^iner un maximum de SBC plus grand, mais atteint plus rapidement. Puisque la concentration en SBC augmente plus rapidement que dans le cas de la simulation de r\'ef\'erence, la limite entre les deux types d'\'evolution positives des bact\'eries a lieu plus t\^ot aussi.
 }
 
-\subsection{Test 4}
+\subsubsection{Test 4}
 
 \par{
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie2/Test4.png}
-  \caption{Simulation de r\'ef\'erence, pour un mod\`ele \`a plusieurs pools de mati\`ere organique
+  \caption{Simulation en r\'eduisant la valeur de la constante d'hydrolyse de D2
   }
   \label{fig:partie2test4}
 \end{figure}
@@ -88,11 +89,11 @@ Nous avons augment\'e la biod\'egradabilit\'e de D1 par rapport \`a D2. Ainsi, l
 Contrairement au test pr\'ec\'edent, nous avons augment\'e la biod\'egradabilit\'e de D2 par rapport \`a D1. Ainsi, nous pouvons constater que l'\'evolution des concentrations de D1 et D2 sont plus semblables que dans le cas de la simulation de r\'ef\'erence. En effet, la concentration en D1 va diminuer plus rapidement, et va atteindre une concentration proche de 0 apr\`es 13 jours. Puisque D2 est mieux hydrolys\'e que lors de la r\'ef\'erence, il va contribuer de mani\`ere plus importante \`a l'augmentation de la concentration de SBC. Ainsi, bien que la concentration maximale en SBC soit atteinte en m\^eme temps que dans le cas de la r\'ef\'erence, car l'\'evolution de D1 est la m\^eme, la valeur de cette concentration maximale sera plus importante que dans le cas de la r\'ef\'erence. De la m\^eme mani\`ere, la concentration maximale en bact\'eries sera plus importante, mais atteinte plus rapidement que dans le cas de la simulation de r\'ef\'erence.
 }
 
-\subsection{Test 5}
+\subsubsection{Test 5}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie2/Test5.png}
-  \caption{Simulation de r\'ef\'erence, pour un mod\`ele \`a plusieurs pools de mati\`ere organique
+  \caption{Simulation en augmentant la valeur de la constante d'endohydrolyse de P1 \`a temp\'erature optimale
   }
   \label{fig:partie2test5}
 \end{figure}
@@ -107,3 +108,5 @@ Bien que les courbes de l'\'evolution de la concentration en D1 soient semblable
 Puisque la concentration en D1 est plus importante en d\'ebut de simulation, la concentration en SBC l'est aussi. Ceci peut se remarquer sur le graphique de l'\'evolution de la concentration en SBC, sur lequel le maximum de concentration est sup\'erieur au cas de la r\'ef\'erence. Ainsi, la concentration maximale en bact\'eries est aussi sup\'erieure.
  
 \subsection{Conclusion}
+Qu'est ce qui contr\^ole la vitesse de croissance de BC (\'el\'ements les plus biod\'egradables) et qu'est ce qui contr\^ole le max de BC (lentement biod\'egradable)?
+
