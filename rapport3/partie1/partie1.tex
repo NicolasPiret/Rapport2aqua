@@ -102,13 +102,16 @@ Sur le graphe de l'\'evolution de la concentration en NH4, celle-ci augmente de 
 
 \subsubsection{Test 5}
 
-
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie1/Test5.png}
   \caption{Simulation en r\'eduisant la valeur du rapport NC du TOC
   }
   \label{fig:partie1test5}
 \end{figure}
+
+\par{
+Dans cette simulation, seul le rapport N:C de TOC est modifi\'e, et est bien inf\'erieur \`a celui de la r\'ef\'erence. Ainsi, le terme vNH4 devient n\'egatif, ce qui veut dire que les bact\'eries puisent du NH4 dans leur environnement, et donc que la concentration en NH4 diminue. Il y a deux types de d\'ecroissance de la concentration en NH4 dans cette simulation. Au d\'ebut et jusque 6 jours, la d\'ecroissance de la concentration en NH4 est due \`a l'utilisation du NH4 par les bact\'eries, et \`a la nitrification. Apr\`es 6 jours, la concentration en SBC devient nulle, et donc la diminution de la concentration de NH4 n'est plus due qu'\`a la nitrification. C'est pourquoi, la d\'ecroissance est moins rapide qu'au d\'ebut de la simulation. On peut noter que la concentration en NH4 va plafonner autour d'une valeur de 5 mmolC.m-3. En effet, la nitrification est d\'ecrite par une fonction de type Michaelis-Menten avec seuil. Ce seuil correspond \`a la constante de demi-saturation, qui a une valeur de 5 mmolC.m-3. Comme le rapport N:C de TOC n'a pas d'influence sur les autres processus, seul l'\'evolution de la concentration en NH4 est modifi\'ee dans cette simulation.
+}
 
 \subsubsection{Test 6}
 
@@ -118,5 +121,8 @@ Sur le graphe de l'\'evolution de la concentration en NH4, celle-ci augmente de 
   }
   \label{fig:partie1test6}
 \end{figure}
+
+\par{
+Dans cette simulation, le terme de nitrification est nul. Ainsi, seul le terme vNH4 influence l'\'evolution de la concentration en NH4. Or, ce terme est ici positif, ce qui signifie que les bact\'eries rel\^achent du NH4 dans leur environnement. Ainsi, au d\'ebut de la simulation, la concentration en NH4 augmente jusqu'\`a atteindre un plafond. Celui-ci est atteint lorsque la concentration en SBC devient nulle. En effet, si la concentration en SBC devient nulle, alors le terme vNH4 le devient aussi, et donc la concentration en NH4 n'\'evolue plus. Ici aussi, le terme de nitrification n'influence que l'\'evolution de la concentration en NH4, et donc seul ce processus est diff\'erent, par rapport \`a la r\'ef\'erence.
 
 \subsection{Conclusion}

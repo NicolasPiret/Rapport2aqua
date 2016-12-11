@@ -12,8 +12,8 @@
 \contentsline {subsubsection}{\numberline {2.3.3}Test 3}{4}{subsubsection.2.3.3}
 \contentsline {subsubsection}{\numberline {2.3.4}Test 4}{4}{subsubsection.2.3.4}
 \contentsline {subsubsection}{\numberline {2.3.5}Test 5}{4}{subsubsection.2.3.5}
-\contentsline {subsubsection}{\numberline {2.3.6}Test 6}{4}{subsubsection.2.3.6}
-\contentsline {subsection}{\numberline {2.4}Conclusion}{4}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.3.6}Test 6}{5}{subsubsection.2.3.6}
+\contentsline {subsection}{\numberline {2.4}Conclusion}{5}{subsection.2.4}
 \contentsline {section}{\numberline {3}Mod\`ele \`a un plusieurs pools de MO}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Description du mod\`ele}{11}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Simulation de r\'ef\'erence}{11}{subsection.3.2}
