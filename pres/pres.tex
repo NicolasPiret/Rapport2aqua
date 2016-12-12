@@ -1,0 +1,69 @@
+\documentclass[t,ignorenonframetext]{beamer}
+\mode<presentation>
+{
+  \usetheme{Madrid}
+  \usecolortheme{default}
+}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[francais]{babel}
+\usepackage{amsmath,amsfonts,amssymb,calc}
+\usepackage{listings}
+
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\newcommand\pythonstyle{\lstset{
+language=Python,
+otherkeywords={self},
+keywordstyle=\color{deepblue},
+stringstyle=\color{deepgreen},
+frame=tb,
+showstringspaces=false,
+basicstyle=\tiny
+}}
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+\pythonstyle
+\lstset{#1}
+}
+{}
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+\pythonstyle
+\lstinputlisting[#1]{#2}}}
+
+\newtheorem*{defi}{Definition}
+
+\usefonttheme{structuresmallcapsserif}
+\usepackage{enumerate,graphicx,enumerate}
+
+\newcommand{\tc}[1]{$\backslash$\texttt{#1}}
+
+\title{Modelisation des aquasystems biologique}
+\author[Yann]{Nicolas Piret \& Yann Sp\"ori}
+\date{\today}
+\institute[ULB]{Université Libre de Bruxelles}
+\subject{}
+\keywords{}
+
+\begin{document}
+
+% title page
+\frame{
+  \maketitle
+%  \begin{center}
+%    \small{\url{https://techfnord.de/bioinf/ulb/aqua.pdf}}
+%  \end{center}
+}
+
+% table of contents
+%\frame{
+%  \frametitle{Table des matières}
+%  \tableofcontents
+%}
+
+\end{document}
