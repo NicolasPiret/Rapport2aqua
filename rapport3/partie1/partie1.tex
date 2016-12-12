@@ -3,10 +3,10 @@
 
 \par{
 Comme toujours on commence par la description du modèle le plus simple. Dans ce cas, c'est le modèle
-\`a un seul pool de matière organique. Cette matière ($TOC$ \~ Carbon Organique Total biodégradable)
+\`a un seul pool de matière organique. Cette matière ($TOC$ = Carbon Organique Total biodégradable)
 est transformée par l'hydrolyse en $SBC$ (Substrats Carbonés monomériques). Ensuite le $SBC$ est
-utilisé par les $BC$ (~ bactéries) pour leur croissance. Les bactéries existantes influencent le $NH_4$
-(~ ammonium) présent. Le modèle complet est représenté par le schéma conceptuel montre dans la
+utilisé par les $BC$ (= bactéries) pour leur croissance. Les bactéries existantes influencent le $NH_4$
+(= ammonium) présent. Le modèle complet est représenté par le schéma conceptuel montre dans la
 figure~\ref{fig:partie1concModel}. Ainsi, les équations appartiennent au modèle sont les suivantes:
 }
 
@@ -139,10 +139,10 @@ mortalit\'e influence l'\'evolution de la concentration en bact\'eries.
 Sur le graphe de l'\'evolution de la concentration en NH4, celle-ci augmente de 0 \`a 6 jours, pour atteindre
 un maximum de 10 mmolC.m-3, puis d\'ecro\^itre ensuite. En effet, l'\'evolution de la concentration d\'epend
 de deux termes: une terme d\'ependant de ce qu'utilise les bact\'eries, par rapport \`a ce dont elles ont
-besoins (vNH4, d\'ependant de la concentration en bact\'eries et de la concentration en SBC), et un terme
+besoins (vNH4 (cmp. equation~\ref{eq:eq4}), d\'ependant de la concentration en bact\'eries et de la concentration en SBC), et un terme
 de nitrification, d\'ependant de la concentration en NH4. Au d\'ebut de la simulation, la concentration en
-NH4 augmente, ce qui veut dire que la valeur de vNH4 est sup\'erieur au terme de nitrification. Ainsi, le terme
-vNH4 est toujours positif, ce qui signifie que ce qu'utilisent les bact\'eries est toujours sup\'erieur \`a ce
+NH4 augmente, ce qui veut dire que la valeur de vNH4 (cmp. equation~\ref{eq:eq4}) est sup\'erieur au terme de nitrification. Ainsi, le terme
+vNH4 (cmp. equation~\ref{eq:eq4}) est toujours positif, ce qui signifie que ce qu'utilisent les bact\'eries est toujours sup\'erieur \`a ce
 qu'elles ont besoin, et donc qu'elles rejettent du NH4 dans leur environnement. Au maximum de concentration
 en NH4, les deux termes se compensent, car la concentration en SBC diminue. Finalement, lorsque la
 concentration en SBC devient nulle, l'\'evolution de NH4 ne d\'epend plus que de la nitrification.
@@ -160,7 +160,7 @@ concentration en SBC devient nulle, l'\'evolution de NH4 ne d\'epend plus que de
   \label{fig:partie1test1}
 \end{figure}
 \par{
-Dans le première test en a diminué la constant d'ectohydrolyse à la température optimale en comparison avec
+Dans le première test (cmp. figure~\ref{fig:partie1test1}) en a diminué la constant d'ectohydrolyse à la température optimale en comparison avec
 la simulation de référence. Du coup le TOC est moins consumer par le BC. En consequence la valeur du terme
 ec diminuera moins vite. Donc, les concentrations maximas des bactéries et des ammonium est atteindent
 plus tard. (Le maximum des bactéries est obtenu à $t=10.32$ avec une concentration de
@@ -180,10 +180,10 @@ $8.98 {^{mmol~N}/_{m^{-3}}}$.)
 \end{figure}
 
 \par{
-Dans le deuxième test en a diminué la constante de hydrolyse par rapport à la simulation de référence.
+Dans le deuxième test (cmp. figure~\ref{fig:partie1test2}) en a diminué la constante de hydrolyse par rapport à la simulation de référence.
 En consequence le terme ec montre des valeurs plus élvées pour les concentrations TOC plus faibles. On obitens
 alors l'effet inverse que dans le test 1. La concentration maximale des bactéries et celle d'ammonium plus
-tôt. (On peut observer la concentration maximale déjà $t=4.56$.)
+tôt. (On peut observer la concentration maximale déjà à $t=4.56$.)
 }
 
 \FloatBarrier
@@ -198,7 +198,7 @@ tôt. (On peut observer la concentration maximale déjà $t=4.56$.)
 \end{figure}
 
 \par{
-Dans le troisième test on a diminué le taux de croissance des BC. On restreinds alors la croissance des BC.
+Dans le troisième test (cmp. figure~\ref{fig:partie1test3}) on a diminué le taux de croissance des BC. On restreinds alors la croissance des BC.
 Quand il y en a moins des BC, la concentration TOC et SBC métabolisée par bout de temps diminuera. Les
 substrats est confinés plus tard. Donc les maximas sont atteinds plus tard.
 }
@@ -214,7 +214,7 @@ substrats est confinés plus tard. Donc les maximas sont atteinds plus tard.
 \end{figure}
 
 \par{
-Dans le quatrième test on a diminué la constante d'uptake des SBC. En consequénce le terme ubc diminuera et
+Dans le quatrième test (cmp. figure~\ref{fig:partie1test4}) on a diminué la constante d'uptake des SBC. En consequénce le terme ubc diminuera et
 les BC pouvent métaboliser les SBC moins vite. Du coup le taux de croissance des BC est reduit. On observe
 ainsi la même situation que dans le test 3.
 }
@@ -230,8 +230,8 @@ ainsi la même situation que dans le test 3.
 \end{figure}
 
 \par{
-Dans cette simulation, seul le rapport N:C de TOC est modifi\'e, et est bien inf\'erieur \`a celui de la
-r\'ef\'erence. Ainsi, le terme vNH4 devient n\'egatif, ce qui veut dire que les bact\'eries puisent du NH4
+Dans cette simulation (cmp. figure~\ref{fig:partie1test5}), seul le rapport N:C de TOC est modifi\'e, et est bien inf\'erieur \`a celui de la
+r\'ef\'erence. Ainsi, le terme vNH4 (cmp. equation~\ref{eq:eq4}) devient n\'egatif, ce qui veut dire que les bact\'eries puisent du NH4
 dans leur environnement, et donc que la concentration en NH4 diminue. Il y a deux types de d\'ecroissance de
 la concentration en NH4 dans cette simulation. Au d\'ebut et jusque 6 jours, la d\'ecroissance de la
 concentration en NH4 est due \`a l'utilisation du NH4 par les bact\'eries, et \`a la nitrification. Apr\`es
@@ -254,11 +254,11 @@ sur les autres processus, seul l'\'evolution de la concentration en NH4 est modi
 \end{figure}
 
 \par{
-Dans cette simulation, le terme de nitrification est nul. Ainsi, seul le terme vNH4 influence l'\'evolution de
+Dans cette simulation (cmp. figure~\ref{fig:partie1test6}), le terme de nitrification est nul. Ainsi, seul le terme vNH4 (cmp. equation~\ref{eq:eq4}) influence l'\'evolution de
 la concentration en NH4. Or, ce terme est ici positif, ce qui signifie que les bact\'eries rel\^achent du NH4
 dans leur environnement. Ainsi, au d\'ebut de la simulation, la concentration en NH4 augmente jusqu'\`a
 atteindre un plafond. Celui-ci est atteint lorsque la concentration en SBC devient nulle. En effet, si la
-concentration en SBC devient nulle, alors le terme vNH4 le devient aussi, et donc la concentration en NH4
+concentration en SBC devient nulle, alors le terme vNH4 (cmp. equation~\ref{eq:eq4}) le devient aussi, et donc la concentration en NH4
 n'\'evolue plus. Ici aussi, le terme de nitrification n'influence que l'\'evolution de la concentration en
 NH4, et donc seul ce processus est diff\'erent, par rapport \`a la r\'ef\'erence.
 }
@@ -276,5 +276,14 @@ Seule la concentration de NH4 peut se stabiliser à une concentration plus grand
 \par{
 Puisque le résultat final de la simulation est fixe, les différences qui conduisent à cette situation
 sont les plus intéressantes. Ici on peut remarquer quelques différences qui sont principallement dues à
-la pénurie du $TOC$. \todo
+la pénurie du $TOC$.
+}
+\par{
+Les modifications de paramètres qui ont comme conséquence un épuisement plus rapide du $TOC$ existantes
+(comme une croissance de $BC$ plus élevées, des valeurs initiales de $TOC$, $SBC$ plus faibles, une
+constante de hydrolyse plus élevé, ...), aboutir à ce que le maxima dans la concentration des $SBC$
+est obtenu plus tôt. Bien sûr, la rareté des ressources a une mauvaise influence sur la croissance des $BC$.
+La concentration diminuant des $BC$ et du $SBC$ à comme conséquent que moins du $NH_4$ est consommer ou
+produit par les $BC$. La concentration en $NH_4$ commence à tomber quand moins du $NH_4$ est produit que
+``disparaissait'' par nitrification ou par les besoins des $BC$.
 }
