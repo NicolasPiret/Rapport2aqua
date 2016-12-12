@@ -3,13 +3,24 @@
 \subsection{Description du mod\`ele}
 
 \par{
+Dans le sixième cours on a agrandis le modèle mathématique. On considére maintenant deux pools de
+matière organique qui sont à la disposition pour des bact\'eries. Du coup le modèle conceptuel se changera.
+On peut admirer le nouveau modèle conceptuel dans la figure~\ref{fig:partie2diagconc}.
 }
 
 \begin{figure}[h!]
-  \includegraphics[width=\textwidth]{partie1/scan1.jpg}
-  \caption{\todo}
+  \includegraphics[width=\textwidth]{partie2/scan1.jpg}
+  \caption{Le modèle conceptuel du système nouveau. On considere maintenant deux pool de matière organique
+$D_1$ et $D_2$ qui rsont dissouts.
+ avec de la biodégradabilité différente ($P_1$ = facilement biodégradable, $P_2=lentement biodégradable$).
+\todo}
   \label{fig:partie2diagconc}
 \end{figure}
+
+\par{
+Puisque le diagramme conceptuel était changé on doit revaloriser les équations. Les
+équations nouveux regardent comme suit:
+}
 
 \begin{equation}
   {{d[BC]}\over{dt}} = (Y_B * u_{BC} - kd_{BC}) [BC]
@@ -66,6 +77,45 @@
   nitri = nimax {{[NH_4]}\over{k_{NH_4ni}+[NH_4]}}
   \label{eq:eq7}
 \end{equation}
+
+\par{
+Pour mieux comprendre les équations du modèle, la grille~\ref{tab:partie2descVars} peut également être
+intéressante. Elle donne un aperçu de la signification etc. de chaque terme dans les équations.
+}
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ | c | c | c | c | c | }
+\hline
+Terme & Signification & Type & Valeur & Unité \\
+\hline
+$BC$ & \pbox{5.5cm}{La concentration des bactéries} & Variable d'état & $1$ & ${{mmol~C}\over{m^{-3}}}$ \\
+$P1$ & \pbox{5.5cm}{La concentration de matière organique dissoute facilement biodégradable} & Variable d'état & $50$ & ${{mmol~C}\over{m^{-3}}}$ \\
+$P2$ & \pbox{5.5cm}{La concentration de matière organique dissoute lentement biodégradable} & Variable d'état & $100$ & ${{mmol~C}\over{m^{-3}}}$ \\
+$D1$ & \pbox{5.5cm}{La concentration du carbon organique facilement biodégradable} & Variable d'état & $50$ & ${{mmol~C}\over{m^{-3}}}$ \\
+$D2$ & \pbox{5.5cm}{La concentration du carbon organique lentement biodégradable} & Variable d'état & $100$ & ${{mmol~C}\over{m^{-3}}}$ \\
+$SBC$ & \pbox{5.5cm}{La concentration du substrats carbonés monomériques} & Variable d'état & $2$ & ${{mmol~C}\over{m^{-3}}}$ \\
+$NH_4$ & \pbox{5.5cm}{La concentration du l'ammonium} & Variable d'état & $6$ & ${{mmol~N}\over{m^{-3}}}$ \\
+$e_{1mxo}$ & \pbox{5.5cm}{Ectohydrolyse à température optimale} & Paramètre & $16$ & $Jours^{-1}$ \\
+$e_{2mxo}$ & \pbox{5.5cm}{Ectohydrolyse à température optimale} & Paramètre & $6$ & $Jours^{-1}$ \\
+$k_{1h}$ & \pbox{5.5cm}{Constante de hydrolyse de D1} & Paramètre & $20$ & ${mmol~C}\over{m^{-3}}$ \\
+$k_{2h}$ & \pbox{5.5cm}{Constante de hydrolyse de D2} & Paramètre & $200$ & ${mmol~C}\over{m^{-3}}$ \\
+$k_{1b0}$ & \pbox{5.5cm}{Endohydrolyse de P1 à température optimale} & Paramètre & $0.12$ & $Jour^{-1}$ \\
+$k_{2b}$ & \pbox{5.5cm}{Endohydrolyse de P2} & Paramètre & $0.006$ & $Jour^{-1}$ \\
+$b_{maxo}$ & \pbox{5.5cm}{Uptake $SBC$ à température optimale} & Paramètre & $14$ & $Jours^{-1}$ \\
+$ks_{BC}$ & \pbox{5.5cm}{Constante d'uptake $SBC$} & Paramètre & $2$ & ${{mmol~N}\over{m^{-3}}}$ \\
+$T_{opt}$ & \pbox{5.5cm}{La température optimale des bactéries} & Paramètre & $30$ & $^{\circ}C$ \\
+$d_{opt}$ & \pbox{5.5cm}{delta T} & Paramètre & $18$ & $^{\circ}C$ \\
+$Y_{BC}$ & \pbox{5.5cm}{Taux de croissance} & Paramètre & $0.2$ & - \\
+$kd_{BCo}$ & \pbox{5.5cm}{Taux de mortalité à température optimale} & Paramètre & $0.25$ & $Jour^{-1}$ \\
+$ni_{mx}$ & \pbox{5.5cm}{Vitesse maximale de la nitrification} & Paramètre & $5$ & ${{mmol~N}\over{m^{-3}}}$ \\
+$N/C_{(TOC)}$ & \pbox{5.5cm}{Rapport N:C de $TOC$} & Constant & $^{16} / _{106}$ & ${mmol~N}\over{mmol~C}$ \\
+$N/C_{(BC)}$ & \pbox{5.5cm}{Rapport N:C des $BC$} & Constant & $^{1} / _{4.6}$ & ${mmol~N}\over{mmol~C}$ \\
+\hline
+\end{tabular}
+\end{center}
+  \caption{Signification, type, valeur et unité de chaque terme/paramètre des équations du modèle.}
+  \label{tab:partie2descVars}
+\end{table}
 
 \FloatBarrier
 \subsection{Simulation de r\'ef\'erence}
@@ -186,7 +236,6 @@ Puisque la concentration en D1 est plus importante en d\'ebut de simulation, la 
 }
  
 \FloatBarrier
-\newpage
 \subsection{Conclusion}
 \par{
 Qu'est ce qui contr\^ole la vitesse de croissance de BC (\'el\'ements les plus biod\'egradables) et qu'est ce qui contr\^ole le max de BC (lentement biod\'egradable)?
