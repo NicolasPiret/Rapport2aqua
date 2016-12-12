@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.2)  11 DEC 2016 13:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.2)  12 DEC 2016 16:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1160,7 +1160,38 @@ Package tocbibind Note: Using section or other style headings.
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/block.tss
 File: block.tss 2011/12/15
 )
-(./rapport.aux)
+(./rapport.aux
+
+LaTeX Warning: Label `eq:eq1' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq2' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq3' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq4' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq5' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq6' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq7' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq10' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq6' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq7' multiply defined.
+
+)
 \openout1 = `rapport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 192.
@@ -1313,167 +1344,225 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1]
 (./introductionGeneral.tex) (./partie1/partie1.tex
+<partie1/scan1.jpg, id=132, 652.4375pt x 321.2pt>
+File: partie1/scan1.jpg Graphic file (type jpg)
+ <use partie1/scan1.jpg>
+Package pdftex.def Info: partie1/scan1.jpg used on input line 12.
+(pdftex.def)             Requested size: 460.72124pt x 226.82341pt.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 23.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 5.
+(amsmath)                 on input line 28.
 
-<partie1/Ref.png, id=131, 578.16pt x 433.62pt>
-File: partie1/Ref.png Graphic file (type png)
- <use partie1/Ref.png>
-Package pdftex.def Info: partie1/Ref.png used on input line 45.
-(pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/ppl/m/n/12 sub-strats car-bo-nés
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+[]\T1/ppl/m/n/12 Constante d'up-take
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]\T1/ppl/m/n/12 Taux de mor-ta-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+\T1/ppl/m/n/12 lité à tem-pé-ra-ture
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[]\T1/ppl/m/n/12 Rapport N :C de
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2] [3 <./partie1/Ref.png>] <partie1/Test1.png, id=156, 578.16pt x 433.62pt>
+[2] [3 <./partie1/scan1.jpg>] [4]
+<partie1/Ref.png, id=163, 578.16pt x 433.62pt>
+File: partie1/Ref.png Graphic file (type png)
+ <use partie1/Ref.png>
+Package pdftex.def Info: partie1/Ref.png used on input line 102.
+(pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
+ [5
+
+ <./partie1/Ref.png>] [6] <partie1/Test1.png, id=182, 578.16pt x 433.62pt>
 File: partie1/Test1.png Graphic file (type png)
 
 <use partie1/Test1.png>
-Package pdftex.def Info: partie1/Test1.png used on input line 68.
+Package pdftex.def Info: partie1/Test1.png used on input line 155.
 (pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<partie1/Test2.png, id=157, 578.16pt x 433.62pt>
+ [7 <./partie1/Test1.png>]
+<partie1/Test2.png, id=190, 578.16pt x 433.62pt>
 File: partie1/Test2.png Graphic file (type png)
  <use partie1/Test2.png>
-Package pdftex.def Info: partie1/Test2.png used on input line 79.
+Package pdftex.def Info: partie1/Test2.png used on input line 174.
 (pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<partie1/Test3.png, id=158, 578.16pt x 433.62pt>
+[8 <./partie1/Test2.png>] <partie1/Test3.png, id=198, 578.16pt x 433.62pt>
 File: partie1/Test3.png Graphic file (type png)
- <use partie1/Test3.png>
-Package pdftex.def Info: partie1/Test3.png used on input line 88.
+
+<use partie1/Test3.png>
+Package pdftex.def Info: partie1/Test3.png used on input line 192.
 (pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<partie1/Test4.png, id=159, 578.16pt x 433.62pt>
+ [9 <./partie1/Test3.png>]
+<partie1/Test4.png, id=206, 578.16pt x 433.62pt>
 File: partie1/Test4.png Graphic file (type png)
  <use partie1/Test4.png>
-Package pdftex.def Info: partie1/Test4.png used on input line 97.
+Package pdftex.def Info: partie1/Test4.png used on input line 209.
 (pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<partie1/Test5.png, id=160, 578.16pt x 433.62pt>
+[10 <./partie1/Test4.png>] <partie1/Test5.png, id=214, 578.16pt x 433.62pt>
 File: partie1/Test5.png Graphic file (type png)
- <use partie1/Test5.png>
-Package pdftex.def Info: partie1/Test5.png used on input line 106.
+
+<use partie1/Test5.png>
+Package pdftex.def Info: partie1/Test5.png used on input line 225.
 (pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<partie1/Test6.png, id=161, 578.16pt x 433.62pt>
+ [11 <./partie1/Test5.png>]
+<partie1/Test6.png, id=223, 578.16pt x 433.62pt>
 File: partie1/Test6.png Graphic file (type png)
  <use partie1/Test6.png>
-Package pdftex.def Info: partie1/Test6.png used on input line 119.
+Package pdftex.def Info: partie1/Test6.png used on input line 248.
 (pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
 
-[4]
+[12 <./partie1/Test6.png>]) (./partie2/partie2.tex [13]
+<partie2/scan1.jpg, id=239, 652.4375pt x 321.2pt>
+File: partie2/scan1.jpg Graphic file (type jpg)
+ <use partie2/scan1.jpg>
+Package pdftex.def Info: partie2/scan1.jpg used on input line 12.
+(pdftex.def)             Requested size: 460.72124pt x 226.82341pt.
+
+[14 <./partie2/scan1.jpg>]
+Underfull \hbox (badness 1057) in paragraph at lines 94--94
+[]\T1/ppl/m/n/12 La concen-tra-tion des bac-té-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+[]\T1/ppl/m/n/12 La concen-tra-tion de ma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\T1/ppl/m/n/12 tière or-ga-nique dis-soute
+ []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 98--98
+\T1/ppl/m/n/12 or-ga-nique len-te-ment bio-dé-
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 103--103
+[]\T1/ppl/m/n/12 Constante de hy-dro-lyse de
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 104--104
+[]\T1/ppl/m/n/12 Constante de hy-dro-lyse de
+ []
+
+
+LaTeX Warning: Float too large for page by 7.72238pt on input line 121.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [5 <./partie1/Test1.png>] [6 <./partie1/Test2.png>] [7 <./partie1/Test3.png>]
-[8 <./partie1/Test4.png>] [9 <./partie1/Test5.png>] [10 <./partie1/Test6.png>]
-(./partie2/partie2.tex <partie2/Ref.png, id=204, 578.16pt x 433.62pt>
+[15] [16] <partie2/Ref.png, id=267, 578.16pt x 433.62pt>
 File: partie2/Ref.png Graphic file (type png)
-
-<use partie2/Ref.png>
-Package pdftex.def Info: partie2/Ref.png used on input line 7.
+ <use partie2/Ref.png>
+Package pdftex.def Info: partie2/Ref.png used on input line 127.
 (pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
- [11
 
- <./partie2/Ref.png>]
-<partie2/Test1.png, id=211, 578.16pt x 433.62pt>
+[17
+
+ <./partie2/Ref.png>] [18] <partie2/Test1.png, id=281, 578.16pt x 433.62pt>
 File: partie2/Test1.png Graphic file (type png)
- <use partie2/Test1.png>
-Package pdftex.def Info: partie2/Test1.png used on input line 30.
-(pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
 
-[12] [13 <./partie2/Test1.png>]
-<partie2/Test2.png, id=223, 578.16pt x 433.62pt>
+<use partie2/Test1.png>
+Package pdftex.def Info: partie2/Test1.png used on input line 154.
+(pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
+ [19 <./partie2/Test1.png>]
+<partie2/Test2.png, id=289, 578.16pt x 433.62pt>
 File: partie2/Test2.png Graphic file (type png)
  <use partie2/Test2.png>
-Package pdftex.def Info: partie2/Test2.png used on input line 49.
+Package pdftex.def Info: partie2/Test2.png used on input line 175.
 (pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
 
-[14 <./partie2/Test2.png>] <partie2/Test3.png, id=230, 578.16pt x 433.62pt>
+[20 <./partie2/Test2.png>] [21]
+<partie2/Test3.png, id=302, 578.16pt x 433.62pt>
 File: partie2/Test3.png Graphic file (type png)
-
-<use partie2/Test3.png>
-Package pdftex.def Info: partie2/Test3.png used on input line 68.
+ <use partie2/Test3.png>
+Package pdftex.def Info: partie2/Test3.png used on input line 197.
 (pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<partie2/Test4.png, id=231, 578.16pt x 433.62pt>
+[22 <./partie2/Test3.png>] <partie2/Test4.png, id=310, 578.16pt x 433.62pt>
 File: partie2/Test4.png Graphic file (type png)
- <use partie2/Test4.png>
-Package pdftex.def Info: partie2/Test4.png used on input line 82.
+
+<use partie2/Test4.png>
+Package pdftex.def Info: partie2/Test4.png used on input line 214.
 (pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[15] <partie2/Test5.png, id=236, 578.16pt x 433.62pt>
+ [23 <./partie2/Test4.png>]
+<partie2/Test5.png, id=318, 578.16pt x 433.62pt>
 File: partie2/Test5.png Graphic file (type png)
  <use partie2/Test5.png>
-Package pdftex.def Info: partie2/Test5.png used on input line 95.
+Package pdftex.def Info: partie2/Test5.png used on input line 230.
 (pdftex.def)             Requested size: 460.72124pt x 345.54008pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[16 <./partie2/Test3.png>]) [17 <./partie2/Test4.png>]
+[24 <./partie2/Test5.png>]) [25]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 243.
- [18 <./partie2/Test5.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 243.
  (./rapport.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 243.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 243.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 03BE790D2B030029BAD62FE4B0D14BC2;2906.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 243.
- )
-(\end occurred inside a group at level 2)
+(rerunfilecheck)             Checksum: 281924EAC33D3D187341E470650D2C8F;3050.
 
-### simple group (level 2) entered at line 107 ({)
-### simple group (level 1) entered at line 125 ({)
-### bottom level 
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 243.
+ ) 
 Here is how much of TeX's memory you used:
- 28659 strings out of 493089
- 497839 string characters out of 6134843
- 694093 words of memory out of 5000000
- 31500 multiletter control sequences out of 15000+600000
+ 28719 strings out of 493089
+ 498764 string characters out of 6134843
+ 704093 words of memory out of 5000000
+ 31532 multiletter control sequences out of 15000+600000
  30308 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,97p,1242b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
-}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on rapport.pdf (19 pages, 742317 bytes).
+ 62i,19n,97p,1433b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
+w/palatino/uplri8a.pfb>
+Output written on rapport.pdf (26 pages, 842660 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
- 246 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 259 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 393 PDF objects out of 1000 (max. 8388607)
+ 320 compressed objects within 4 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 269 words of extra memory for PDF output out of 10000 (max. 10000000)
 

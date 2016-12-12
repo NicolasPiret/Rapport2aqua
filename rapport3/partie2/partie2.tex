@@ -3,26 +3,26 @@
 \subsection{Description du mod\`ele}
 
 \par{
-Dans le sixième cours on a agrandis le modèle mathématique. On considére maintenant deux pools de
-matière organique qui sont à la disposition pour des bact\'eries. Du coup le modèle conceptuel se changera.
-On peut admirer le nouveau modèle conceptuel dans la figure~\ref{fig:partie2diagconc}.
+Dans le sixième cours, nous avons agrandis le modèle mathématique. On considére maintenant deux pools de
+matière organique qui sont à disposition pour les bact\'eries. Du coup le modèle conceptuel est modifi\'e.
+On peut observer le nouveau modèle conceptuel dans la figure~\ref{fig:partie2diagconc}.
 }
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie2/scan1.jpg}
-  \caption{Le modèle conceptuel du système nouveau. On considere maintenant deux pool de matière organique
-$D_1$ et $D_2$ qui sont dissoute. Par hydrolyse, cette matière est réduit dans des particulaires plus petites
-\textcircled{1}. L'hydrolyse est plus lent pour $D_2$ que pour $D_1$, puisque $D_1$ represente le pool
-facilement biodégradable et $D_2$ le pool lentement biodégradable. Cette matière ($D_1$, $D_2$) reduit peut
-ensuite être ectohydrolyse par les bactéries \textcircled{2} en $SBC$ (substrats carbonés monomériques).
+  \caption{Le modèle conceptuel du nouveau système. On consid\`ere maintenant deux pools de matière organique $P_1$ et $P_2$ qui sont dissous par hydrolyse en
+$D_1$ et $D_2$. Par hydrolyse, cette matière est réduit en mati\`ere particulaire plus petite
+\textcircled{1}. L'hydrolyse est plus lent pour $D_2$ que pour $D_1$, puisque $D_1$ repr\'esente le pool
+facilement biodégradable et $D_2$ le pool lentement biodégradable. Cette matière ($D_1$, $D_2$) r\'eduite peut
+ensuite être ectohydrolys\'ee par les bactéries \textcircled{2} en $SBC$ (substrats carbonés monomériques).
 Ceci est ensuite amené à réagir comme décrit dans le modèle précédent.
 }
   \label{fig:partie2diagconc}
 \end{figure}
 
 \par{
-Puisque le diagramme conceptuel était changé on doit revaloriser les équations. Les
-équations nouveux regardent comme suit:
+Puisque le diagramme conceptuel a \'et\'e modifi\'e, on doit revoir les équations. Les nouvelles
+équations sont comme suit:
 }
 
 \begin{equation}
@@ -131,7 +131,7 @@ $N/C_{(BC)}$ & \pbox{5.5cm}{Rapport N:C des $BC$} & Constant & $^{1} / _{4.6}$ &
 \end{figure}
 
 \par{
-Dans la simulation de référence (cmp figure~\ref{fig:partie2ref})
+Dans la simulation de référence (cmp figure~\ref{fig:partie2ref}),
 les concentration en P1 et P2 diminuent selon une cin\'etique d'ordre 1. En effet, les \'equations de l'\'evolution de ces deux param\`etres sont toutes les deux d\'ependante d'une constante multipli\'ee par la concentration en P1 ou P2 (r\'ef aux \'equations). Cependant, nous pouvons constater que la concentration en P1 diminue plus rapidement que celle de P2 (la pente de la courbe est plus grande). Ceci s'explique par le fait que la constante dans l'\'equation de P1 est sup\'erieure \`a celle dans l'\'equation de P2. Donc, P1 est plus rapidement transform\'e en D1 que P2 est transform\'e en D2.
 }
 \par{
@@ -158,7 +158,7 @@ Pour l'\'evolution de la concentration en NH4, celle-ci augmente rapidement au d
 \end{figure}
 
 \par{
-Dans le première test (cmp figure~\ref{fig:partie2test1})
+Dans le premier test (cmp figure~\ref{fig:partie2test1}),
 contrairement \`a la simulation de r\'ef\'erence, les concentrations initiales en P sont suffisantes pour permettre une augmentation de la concentration en D, de 0 \`a 5 jours pour D1 et tout le long de la simulation pour D2. En effet, apr\`es 5 jours, la concentration en P1 devient trop faible, coupl\'e \`a l'augmentation de la biomasse bact\'erienne, entra\^inant ainsi la diminution de la concentration en D1. Pour D2, le terme d'augmentation de la concentration est toujours sup\'erieur au terme de diminution.
 }
 \par{
@@ -179,7 +179,7 @@ De la m\^eme mani\`ere que pour la simulation de r\'ef\'erence, l'\'evolution de
 \end{figure}
 
 \par{
-Comme on peut voir dans la figure~\ref{fig:partie2test2}, dans le deuxième test,
+Comme on peut le voir sur la figure~\ref{fig:partie2test2}, dans le deuxième test,
 la concentration en P1 diminue relativement plus que P2, que dans le cas de la r\'ef\'erence. En effet, l'\'evolution de la concentration en P1 est directement proportionnelle \`a la concentration en P1, qui est ici initialement deux fois plus \'elev\'ee que dans le cas de la r\'ef\'erence. Comme la concentration en P1 est \'elev\'ee et que P1 est pr\'ef\'erentiellement hydrolys\'e en D1 puis en SBC que P2 en D2 puis en SBC, la concentration en P2 diminue tr\`es peu.
 }
 \par{
@@ -201,7 +201,7 @@ La concentration en SBC va augmenter en d\'ebut de simulation, lorsque les conce
 \end{figure}
 
 \par{
-Ici (cmp figure~\ref{fig:partie2test3})
+Ici (cmp figure~\ref{fig:partie2test3}),
 nous avons augment\'e la biod\'egradabilit\'e de D1 par rapport \`a D2. Ainsi, la concentration en D1 va diminuer plus rapidement que dans le cas de la r\'ef\'erence, ce qui va entra\^iner un maximum de SBC plus grand, mais atteint plus rapidement. Puisque la concentration en SBC augmente plus rapidement que dans le cas de la simulation de r\'ef\'erence, la limite entre les deux types d'\'evolution positives des bact\'eries a lieu plus t\^ot aussi.
 }
 
@@ -218,8 +218,8 @@ nous avons augment\'e la biod\'egradabilit\'e de D1 par rapport \`a D2. Ainsi, l
 \end{figure}
 }
 \par{
-Dans la quatrième simulation (cmp figure~\ref{fig:partie2test4})
-nous avons contrairement au test pr\'ec\'edent augment\'e la biod\'egradabilit\'e de D2 par rapport \`a D1. Ainsi, nous pouvons constater que l'\'evolution des concentrations de D1 et D2 sont plus semblables que dans le cas de la simulation de r\'ef\'erence. En effet, la concentration en D1 va diminuer plus rapidement, et va atteindre une concentration proche de 0 apr\`es 13 jours. Puisque D2 est mieux hydrolys\'e que lors de la r\'ef\'erence, il va contribuer de mani\`ere plus importante \`a l'augmentation de la concentration de SBC. Ainsi, bien que la concentration maximale en SBC soit atteinte en m\^eme temps que dans le cas de la r\'ef\'erence, car l'\'evolution de D1 est la m\^eme, la valeur de cette concentration maximale sera plus importante que dans le cas de la r\'ef\'erence. De la m\^eme mani\`ere, la concentration maximale en bact\'eries sera plus importante, mais atteinte plus rapidement que dans le cas de la simulation de r\'ef\'erence.
+Dans la quatrième simulation (cmp figure~\ref{fig:partie2test4}),
+nous avons, contrairement au test pr\'ec\'edent, augment\'e la biod\'egradabilit\'e de D2 par rapport \`a D1. Ainsi, nous pouvons constater que l'\'evolution des concentrations de D1 et D2 sont plus semblables que dans le cas de la simulation de r\'ef\'erence. En effet, la concentration en D1 va diminuer plus rapidement, et va atteindre une concentration proche de 0 apr\`es 13 jours. Puisque D2 est mieux hydrolys\'e que lors de la r\'ef\'erence, il va contribuer de mani\`ere plus importante \`a l'augmentation de la concentration de SBC. Ainsi, bien que la concentration maximale en SBC soit atteinte en m\^eme temps que dans le cas de la r\'ef\'erence, car l'\'evolution de D1 est la m\^eme, la valeur de cette concentration maximale sera plus importante que dans le cas de la r\'ef\'erence. De la m\^eme mani\`ere, la concentration maximale en bact\'eries sera plus importante, mais atteinte plus rapidement que dans le cas de la simulation de r\'ef\'erence.
 }
 
 \FloatBarrier
@@ -234,7 +234,7 @@ nous avons contrairement au test pr\'ec\'edent augment\'e la biod\'egradabilit\'
 \end{figure}
 
 \par{
-Enfin dans le test numéro 5 (cmp figure~\ref{fig:partie2test5})
+Enfin, dans le test numéro 5 (cmp figure~\ref{fig:partie2test5}),
 nous avons augment\'e la vitesse d'hydrolyse de P1 en D1. Ainsi, nous pouvons constater que la concentration en P1 diminue plus rapidement que dans le cas de la r\'ef\'erence. En effet, dans la simulation de r\'ef\'erence, la diminution de la concentration en P1 \'etait presque lin\'eaire, tandis qu'elle ne l'est plus dans ce test.
 }
 \par{
@@ -248,15 +248,15 @@ Puisque la concentration en D1 est plus importante en d\'ebut de simulation, la 
 \subsection{Conclusion}
 \par{
 Par rapport au mod\`ele \`a un seul pool de matière organique,
-le mod\`ele \`a plusieurs pools de matière organique était prolongé pour modiliser deux pools de
-matière organique différent. Ainsi les modèles diffèrent seuelement dans les équations qui
-décrivons la génération de $SBC$.
+le mod\`ele \`a plusieurs pools de matière organique a \'et\'e prolongé pour mod\'eliser deux pools de
+matière organique différents. Ainsi les modèles diffèrent seulement dans les équations qui
+décrirons la génération de $SBC$.
 }
 \par{
-Quand on compare l'impacte de les deux pools de matière organique à la vitesse de croissance des $BC$, on
-peut remarquer, que c'est principallement la concentration en $P_1$ et en $D_1$ (le pool de matière facilement
-biodégradable) qui joue sur la vitesse de croissance des $BC$. Le plus la concentration en $P_1$ et en $D_1$
-diminuera, le plus la disponibilite du $P_2$ et en $D_2$ (le pool de matière lentement biodégradable) devines
+Quand on compare l'impact des deux pools de matière organique à la vitesse de croissance des $BC$, on
+peut remarquer que c'est principalement la concentration en $P_1$ et en $D_1$ (le pool de matière facilement
+biodégradable) qui joue sur la vitesse de croissance des $BC$. Au plus la concentration en $P_1$ et en $D_1$
+diminuera, au plus la disponibilit\'e du $P_2$ et en $D_2$ (le pool de matière lentement biodégradable) deviendra
 important pour les $BC$. Du coup le pool de matière lentement biodégradable joue plutôt sur le maximum des
 $BC$.
 }

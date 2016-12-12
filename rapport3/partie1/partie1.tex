@@ -2,26 +2,24 @@
 \subsection{Description du mod\`ele}
 
 \par{
-Comme toujours on commence par la description du modèle le plus simple. Dans ce cas, c'est le modèle
-\`a un seul pool de matière organique. Cette matière ($TOC$ = Carbon Organique Total biodégradable)
-est transformée par l'hydrolyse en $SBC$ (Substrats Carbonés monomériques). Ensuite le $SBC$ est
-utilisé par les $BC$ (= bactéries) pour leur croissance. Les bactéries existantes influencent le $NH_4$
-(= ammonium) présent. Le modèle complet est représenté par le schéma conceptuel montre dans la
-figure~\ref{fig:partie1concModel}. Ainsi, les équations appartiennent au modèle sont les suivantes:
+Nous allons commencer par la description du modèle le plus simple, c'est \`a dire par le mod\`ele \`a un seul pool de matière organique. Cette matière ($TOC$ = Carbone Organique Total biodégradable)
+est transformée par hydrolyse en $SBC$ (Substrats Carbonés monomériques). Ensuite le $SBC$ est
+utilisé par les $BC$ (= bactéries) pour leur croissance. Les bactéries pr\'esentes influencent le $NH_4$
+(= ammonium) présent. Le modèle complet est représenté par le schéma conceptuel, sur la figure~\ref{fig:partie1concModel}. Ainsi, les équations qui d\'ecrivent le modèle sont les suivantes:
 }
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{partie1/scan1.jpg}
-  \caption{Le modèle conceptuel du système étudié dans le cinquième cours. Dans le système le pool du
-$TOC$ est ectohydrolyse en $SBC$ \textcircled{1}. Cette réaction dépend de la température. Ensuite, 
-les bactéries uptake le $SBC$ \textcircled{2}. Cette réaction dépend de la température également. Les
-bactéries ont besoin du $SBC$ pour leur croissance. Naturellement le carbone consomme ne peut pas être
-utilisée completement pour la croissance. Une certain partie est besoin pour les procédés de
+  \caption{Le modèle conceptuel du système étudié dans le cinquième cours. Dans le système, le pool du
+$TOC$ est ectohydrolys\'e en $SBC$ \textcircled{1}. Cette réaction dépend de la température. Ensuite, 
+les bactéries utilisent le $SBC$ \textcircled{2}. Cette réaction dépend de la température également. Les
+bactéries ont besoin du $SBC$ pour leur croissance. Naturellement, tout le carbone consomm\'e ne peut  être
+utilisée compl\`etement pour la croissance. Une certaine partie est utilis\'ee pour les procédés de
 respiration. La partie du carbone inutilisable pour la croissance est représenté par $Y_{BC}$ \textcircled{3}.
-Afin de réduire l'augmentation de la concentration des bactéries, le modèle contient une terme pour la lyse
+Afin de réduire l'augmentation de la concentration des bactéries, le modèle contient un terme pour la lyse
 cellulaire des bactéries \textcircled{4}. Les bactéries affectent la concentration en $NH_4$ -
 elles absorbent du $NH_4$ pour leurs processus métaboliques \textcircled{6}, mais elles peuvent aussi le
-produire \textcircled{5}. Une partie de $NH_4$ est retiré du modèle par nitrification \textcircled{7}.
+relarguer \textcircled{5}. Une partie de $NH_4$ est retiré du modèle par nitrification \textcircled{7}.
 }
   \label{fig:partie1concModel}
 \end{figure}
@@ -65,8 +63,8 @@ Avec
 \end{equation}
 
 \par{
-Pour mieux comprendre les équations du modèle, la grille~\ref{tab:partie1descVars} peut également être
-intéressante. Elle donne un aperçu de la signification etc. de chaque terme dans les équations.
+Pour mieux comprendre les équations du modèle, le tableau~\ref{tab:partie1descVars} peut également être
+intéressant. Il donne un aperçu de la signification de chaque terme dans les équations.
 }
 
 \begin{table}[h!]
@@ -160,9 +158,9 @@ concentration en SBC devient nulle, l'\'evolution de NH4 ne d\'epend plus que de
   \label{fig:partie1test1}
 \end{figure}
 \par{
-Dans le première test (cmp. figure~\ref{fig:partie1test1}) en a diminué la constant d'ectohydrolyse à la température optimale en comparison avec
-la simulation de référence. Du coup le TOC est moins consumer par le BC. En consequence la valeur du terme
-ec diminuera moins vite. Donc, les concentrations maximas des bactéries et des ammonium est atteindent
+Dans le premier test (cmp. figure~\ref{fig:partie1test1}) on a diminué la constante d'ectohydrolyse à la température optimale, en comparaison avec
+la simulation de référence. Du coup, le TOC est moins consomm\'e par les bact\'eries. En cons\'equence, la valeur du terme
+ec diminuera moins vite. Donc, les concentrations maximales des bactéries et des ions ammonium sont atteintes
 plus tard. (Le maximum des bactéries est obtenu à $t=10.32$ avec une concentration de
 $7.568 {^{mmol~C}/_{m^{-3}}}$ et le maximum d'ammonium est à $10.2$ avec une concentration de
 $8.98 {^{mmol~N}/_{m^{-3}}}$.)
@@ -180,10 +178,10 @@ $8.98 {^{mmol~N}/_{m^{-3}}}$.)
 \end{figure}
 
 \par{
-Dans le deuxième test (cmp. figure~\ref{fig:partie1test2}) en a diminué la constante de hydrolyse par rapport à la simulation de référence.
-En consequence le terme ec montre des valeurs plus élvées pour les concentrations TOC plus faibles. On obitens
-alors l'effet inverse que dans le test 1. La concentration maximale des bactéries et celle d'ammonium plus
-tôt. (On peut observer la concentration maximale déjà à $t=4.56$.)
+Dans le deuxième test (cmp. figure~\ref{fig:partie1test2}), on a diminué la constante d'hydrolyse par rapport à la simulation de référence.
+En cons\'equence, le terme ec montre des valeurs plus élvées pour des concentrations TOC plus faibles. On obtient
+alors l'effet inverse que dans le test 1. Les concentrations maximale en bactéries et en ammonium sont atteintes plus
+tôt. (On peut déjà observer la concentration maximale à $t=4.56$.)
 }
 
 \FloatBarrier
@@ -198,9 +196,9 @@ tôt. (On peut observer la concentration maximale déjà à $t=4.56$.)
 \end{figure}
 
 \par{
-Dans le troisième test (cmp. figure~\ref{fig:partie1test3}) on a diminué le taux de croissance des BC. On restreinds alors la croissance des BC.
-Quand il y en a moins des BC, la concentration TOC et SBC métabolisée par bout de temps diminuera. Les
-substrats est confinés plus tard. Donc les maximas sont atteinds plus tard.
+Dans le troisième test (cmp. figure~\ref{fig:partie1test3}), on a diminué le taux de croissance des bact\'eries. On restreint alors la croissance de celles-ci.
+Quand il y en a moins de bact\'eries, les concentrations en TOC et en SBC métabolisées par pas de temps diminueront. Les
+substrats sont confinés plus tard, et donc les maximas sont atteints plus tard.
 }
 
 \FloatBarrier
@@ -214,8 +212,8 @@ substrats est confinés plus tard. Donc les maximas sont atteinds plus tard.
 \end{figure}
 
 \par{
-Dans le quatrième test (cmp. figure~\ref{fig:partie1test4}) on a diminué la constante d'uptake des SBC. En consequénce le terme ubc diminuera et
-les BC pouvent métaboliser les SBC moins vite. Du coup le taux de croissance des BC est reduit. On observe
+Dans le quatrième test (cmp. figure~\ref{fig:partie1test4}), on a diminué la constante d'uptake du SBC. En consequénce, le terme ubc diminuera et
+les bact\'eries métaboliseront le SBC moins rapidement. Du coup le taux de croissance des BC est r\'eduit. On observe
 ainsi la même situation que dans le test 3.
 }
 
@@ -267,23 +265,22 @@ NH4, et donc seul ce processus est diff\'erent, par rapport \`a la r\'ef\'erence
 \newpage
 \subsection{Conclusion}
 \par{
-En raison du fait que nous partons d'une quantité limitée de $TOC$ non-régénérable, la population bactérienne
-ne peut pas croître indéfiniment. (Ainsi, d'un moment donné, les bactéries souffrent de la faim.)
-Pour les simulations infiniment longues, on obtient donc toujours que le TOC est épuisé et la
-concentration des bactéries est tombée à $0$. Cela vaut également pour la concentration de SBC.
-Seule la concentration de NH4 peut se stabiliser à une concentration plus grandes que $0$.
+En raison du fait que nous partons d'une quantité limitée de $TOC$ non regénérable, la population bactérienne
+ne peut pas croître indéfiniment.
+Pour les simulations infiniment longues, on obtient donc toujours que le TOC est épuisé et que la
+concentration en bactéries tombe à $0$. Cela vaut également pour la concentration en SBC.
+Seule la concentration de NH4 peut se stabiliser à une concentration plus grande que $0$.
 }
 \par{
 Puisque le résultat final de la simulation est fixe, les différences qui conduisent à cette situation
-sont les plus intéressantes. Ici on peut remarquer quelques différences qui sont principallement dues à
+sont les plus intéressantes. Ici on peut remarquer quelques différences qui sont principalement dues à
 la pénurie du $TOC$.
 }
 \par{
-Les modifications de paramètres qui ont comme conséquence un épuisement plus rapide du $TOC$ existantes
+Les modifications de paramètres, qui ont comme conséquence un épuisement plus rapide du $TOC$ existant
 (comme une croissance de $BC$ plus élevées, des valeurs initiales de $TOC$, $SBC$ plus faibles, une
-constante de hydrolyse plus élevé, ...), aboutir à ce que le maxima dans la concentration des $SBC$
-est obtenu plus tôt. Bien sûr, la rareté des ressources a une mauvaise influence sur la croissance des $BC$.
-La concentration diminuant des $BC$ et du $SBC$ à comme conséquent que moins du $NH_4$ est consommer ou
-produit par les $BC$. La concentration en $NH_4$ commence à tomber quand moins du $NH_4$ est produit que
+constante d'hydrolyse plus élevé, ...), aboutissent à un maximum de concentration en $SBC$ obtenu plus tôt. Bien sûr, la rareté des ressources a une influence n\'egative sur la croissance des $BC$.
+La diminution des concentrations en $BC$ et en $SBC$ a pour conséquence que moins de $NH_4$ est consomm\'e ou
+produit par les $BC$. La concentration en $NH_4$ commence à tomber quand moins de $NH_4$ est produit et quand il
 ``disparaissait'' par nitrification ou par les besoins des $BC$.
 }
