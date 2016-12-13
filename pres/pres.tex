@@ -49,7 +49,7 @@ basicstyle=\tiny
 
 \newcommand{\tc}[1]{$\backslash$\texttt{#1}}
 
-\title{Modelisation des aquasystems biologique}
+\title{Mod\'elisation des \'ecosyst\`emes aquatiques}
 \author[Yann]{Nicolas Piret \& Yann Sp\"ori}
 \date{\today}
 \institute[ULB]{Université Libre de Bruxelles}
@@ -67,7 +67,7 @@ basicstyle=\tiny
 }
 
 \frame{
-  \frametitle{Diagramme conceptuelle}
+  \frametitle{Diagramme conceptuel}
     \begin{figure}
       \includegraphics[width=.8\textwidth]{../partie2/diagConc.png}
     \end{figure}
@@ -93,7 +93,7 @@ basicstyle=\tiny
 \end{equation}
 }
 \frame{
-  \frametitle{Grazing séléctive}
+  \frametitle{Grazing sélectif}
 \begin{equation}
   [PHYTO] = [DA] + [DINO]
   \label{eq:partie2nonSelEq1}
@@ -112,7 +112,7 @@ basicstyle=\tiny
 \end{equation}
 }
 \frame{
-  \frametitle{Grazing non-séléctive}
+  \frametitle{Grazing non-sélectif}
 \begin{equation}
   graz_{MSZ/DA} = g_{MSZ} max(T) {{\left ( {{[DA]}\over{kg_{MSZ/DA}}}\right )^2}\over
 {1 + \left ( {{[DA]}\over{kg_{MSZ/DA}}} \right )^2 + \left ( {{[DINO]}\over{kg_{MSZ/DINO}}} \right )^2}}
@@ -140,89 +140,89 @@ d'une fonction de grazing séléctive.}
 }
 
 \frame{
-  \frametitle{Test 1 - grazing non séléctive}
+  \frametitle{Test 1 - grazing non-sélectif}
     \begin{figure}
       \includegraphics[width=0.5\textwidth]{../partie2/1Nonselec.png}\hfill
       \includegraphics[width=0.5\textwidth]{../partie2/test1nonsel.png}\hfill
-      \caption{La simulation de référence (gauche) par rapport au première test de sensibilité (droite).
-Dans le première test on a augmonté la valeur initiale du $DA$ de 20 à 30 $^{mmol~C}/_{m^{-3}}$ et on a
+      \caption{La simulation de référence (gauche) par rapport au premier test de sensibilité (droite).
+Dans le premier test, on a augmenté la valeur initiale du $DA$ de 20 à 30 $^{mmol~C}/_{m^{-3}}$ et on a
 diminué la valeur initiale du $DINO$ de 20 à 10 $^{mmol~C}/_{m^{-3}}$.
 }
     \end{figure}
 }
 \frame{
-  \frametitle{Test 1 - grazing séléctive}
+  \frametitle{Test 1 - grazing séléctif}
     \begin{figure}
       \includegraphics[width=0.5\textwidth]{../partie2/1Selec.png}\hfill
       \includegraphics[width=0.5\textwidth]{../partie2/test1sel.png}\hfill
-      \caption{La simulation de référence (gauche) par rapport au première test de sensibilité (droite).
-Dans le première test on a augmonté la valeur initiale du $DA$ de 20 à 30 $^{mmol~C}/_{m^{-3}}$ et on a
+      \caption{La simulation de référence (gauche) par rapport au premier test de sensibilité (droite).
+Dans le premier test, on a augmenté la valeur initiale du $DA$ de 20 à 30 $^{mmol~C}/_{m^{-3}}$ et on a
 diminué la valeur initiale du $DINO$ de 20 à 10 $^{mmol~C}/_{m^{-3}}$.
       }
     \end{figure}
 }
 
 \frame{
-  \frametitle{Test 2 - grazing non séléctive}
+  \frametitle{Test 2 - grazing non-sélectif}
     \begin{figure}
       \includegraphics[width=0.5\textwidth]{../partie2/1Nonselec.png}\hfill
       \includegraphics[width=0.5\textwidth]{../partie2/test2nonsel.png}\hfill
       \caption{La simulation de référence (gauche) par rapport au deuxième test de sensibilité (droite).
-Dans le deuxième test on a augmonté la valeur initiale du $DINO$ de 20 à 30 $^{mmol~C}/_{m^{-3}}$ et on a
+Dans le deuxième test, on a augmenté la valeur initiale du $DINO$ de 20 à 30 $^{mmol~C}/_{m^{-3}}$ et on a
 diminué la valeur initiale du $DA$ de 20 à 10 $^{mmol~C}/_{m^{-3}}$.
 }
     \end{figure}
 }
 \frame{
-  \frametitle{Test 2 - grazing séléctive}
+  \frametitle{Test 2 - grazing sélectif}
     \begin{figure}
       \includegraphics[width=0.5\textwidth]{../partie2/1Selec.png}\hfill
       \includegraphics[width=0.5\textwidth]{../partie2/test2sel.png}\hfill
       \caption{La simulation de référence (gauche) par rapport au deuxième test de sensibilité (droite).
-Dans le deuxième test on a augmonté la valeur initiale du $DINO$ de 20 à 30 $^{mmol~C}/_{m^{-3}}$ et on a
+Dans le deuxième test, on a augmenté la valeur initiale du $DINO$ de 20 à 30 $^{mmol~C}/_{m^{-3}}$ et on a
 diminué la valeur initiale du $DA$ de 20 à 10 $^{mmol~C}/_{m^{-3}}$.
 }
     \end{figure}
 }
 
 \frame{
-  \frametitle{Test 3 - grazing non séléctive}
+  \frametitle{Test 3 - grazing non-sélectif}
     \begin{figure}
       \includegraphics[width=0.5\textwidth]{../partie2/1Nonselec.png}\hfill
       \includegraphics[width=0.5\textwidth]{../partie2/test3nonsel.png}\hfill
       \caption{La simulation de référence (gauche) par rapport au troisième test de sensibilité (droite).
-Dans le troisième test on a diminué la valeur initiale du $MSZ$ de 10 à 1 $^{mmol~C}/_{m^{-3}}$.
+Dans le troisième test, on a diminué la valeur initiale du $MSZ$ de 10 à 1 $^{mmol~C}/_{m^{-3}}$.
 }
     \end{figure}
 }
 \frame{
-  \frametitle{Test 3 - grazing séléctive}
+  \frametitle{Test 3 - grazing sélectif}
     \begin{figure}
       \includegraphics[width=0.5\textwidth]{../partie2/1Selec.png}\hfill
       \includegraphics[width=0.5\textwidth]{../partie2/test3sel.png}\hfill
       \caption{La simulation de référence (gauche) par rapport au troisième test de sensibilité (droite).
-Dans le troisième test on a diminué la valeur initiale du $MSZ$ de 10 à 1 $^{mmol~C}/_{m^{-3}}$.
+Dans le troisième test, on a diminué la valeur initiale du $MSZ$ de 10 à 1 $^{mmol~C}/_{m^{-3}}$.
 }
     \end{figure}
 }
 
 \frame{
-  \frametitle{Test 4 - grazing non séléctive}
+  \frametitle{Test 4 - grazing non-sélectif}
     \begin{figure}
       \includegraphics[width=0.5\textwidth]{../partie2/1Nonselec.png}\hfill
       \includegraphics[width=0.5\textwidth]{../partie2/test4nonsel.png}\hfill
       \caption{La simulation de référence (gauche) par rapport au quatrième test de sensibilité (droite).
-Dans le quatrième test on a agumonté la valeur initiale du $MSZ$ de 10 à 20 $^{mmol~C}/_{m^{-3}}$.
+Dans le quatrième test, on a augmenté la valeur initiale du $MSZ$ de 10 à 20 $^{mmol~C}/_{m^{-3}}$.
 }
     \end{figure}
 }
 \frame{
-  \frametitle{Test 4 - grazing séléctive}
+  \frametitle{Test 4 - grazing sélectif}
     \begin{figure}
       \includegraphics[width=0.5\textwidth]{../partie2/1Selec.png}\hfill
       \includegraphics[width=0.5\textwidth]{../partie2/test4sel.png}\hfill
       \caption{La simulation de référence (gauche) par rapport au quatrième test de sensibilité (droite).
-Dans le quatrième test on a agumonté la valeur initiale du $MSZ$ de 10 à 20 $^{mmol~C}/_{m^{-3}}$.
+Dans le quatrième test, on a augmenté la valeur initiale du $MSZ$ de 10 à 20 $^{mmol~C}/_{m^{-3}}$.
 }
     \end{figure}
 }
